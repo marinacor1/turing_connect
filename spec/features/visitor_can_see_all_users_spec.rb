@@ -10,7 +10,7 @@ RSpec.feature "visitor can see all users" do
     expect(current_path).to eq(users_map_path)
     expect(page).to have_content("Cohort: 1606")
     expect(page).to have_content("Name: Andy Swanson")
-    expect(page).to have_content("Current Employer:")
-    expect(page).to have_content("Location:")
+    expect(page).to have_content("Current Employer: AlamoU")
+    expect(page).to have_content("Location: Denver, CO")
   end
 end
