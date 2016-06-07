@@ -1,11 +1,11 @@
 class SessionsController < ApplicationController
   def create
-    if user = User.from_omniauth(request.env["omniauth.auth"])  && User.find_by(gihub_id: (request.env["omniauth.auth"][:uid]))
+    if User.find_by(github_id: (request.env["omniauth.auth"].extra.raw_info.uid)) && user = User.from_omniauth(request.env["omniauth.auth"])
       session[:user_id] = user.id
+      redirect_to root_path
     else
       render file: 'public/404', status: 404
     end
-    redirect_to root_path
   end
 
   def destroy

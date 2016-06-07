@@ -1,0 +1,13 @@
+marina:
+  cohort: "1602"
+  name: "Marina Corona"
+  github_id: ENV["github_uid"]
+
+andy:
+    cohort: "1606"
+    name: "Andy Swanson"
+    current_employer: "AlamoU"
+    github_id: "482"
+    street_address: "910 Santa Fe Dr."
+    city: "Denver"
+    state: "CO"
