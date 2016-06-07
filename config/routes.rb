@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/auth/github", as: :github_login
   get "/auth/github/callback", to: "sessions#create"
   get "/logout", to: "sessions#destroy", as: :logout
+  delete "/logout", to: "sessions#destroy"
   namespace :api, defaults: {format: :json} do
     namespace :v1 do
       get '/users', to: 'users#index'

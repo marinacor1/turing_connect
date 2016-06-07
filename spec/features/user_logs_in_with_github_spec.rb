@@ -42,7 +42,7 @@ require 'rails_helper'
       })
   end
 RSpec.feature "user logs in with github account" do
-  xscenario "user will see request to authorize access using github" do
+  scenario "user will see request to authorize access using github" do
     User.create(cohort: "1602", name: "Marina Corona", github_id: ENV["github_uid"])
 
     stub_omniauth
