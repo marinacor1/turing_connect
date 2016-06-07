@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "user", :type => :controller do
-  it "GET index" do
+  xit "GET index" do
     user = User.create(cohort: "1616", name: "Andy Swanson", current_employer: "AlamoU", github_id: "482", street_address: "910 Santa Fe Dr.", city: "Denver", state: "CO")
     user2 = User.create(cohort: "1606", name: "Sam Jones", current_employer: "Turing", github_id: "482", street_address: "910 Santa Fe Dr.", city: "Austin", state: "TX")
     id = user.id
