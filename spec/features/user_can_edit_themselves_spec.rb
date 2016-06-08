@@ -23,10 +23,8 @@ RSpec.feature "user can edit themselves" do
       fill_in "Email", with: "email@email.com"
       click_on "Submit"
     end
-
-    expect(user.first_login).to eq(false)
-
-    expect(current_path).to eq dashboard_path
+save_and_open_page
+    expect(current_path).to eq user_path(user)
     expect(page).to have_content "1508"
     expect(page).to not_have_content "1602"
     expect(page).to have_content "Malcolm Gladwell"
@@ -35,5 +33,15 @@ RSpec.feature "user can edit themselves" do
     expect(page).to have_content "1510 Blake Street"
     expect(page).to have_content "Denver, CO"
     expect(page).to have_content "email@email.com"
+
+    click_on "Logout"
+    stub_omniauth
+    visit "/"
+
+    click_on "Sign in with Github"
+
+    expect(current_path).to eq user_path(user)
+
+    expect(user.first_login).to eq(false)
   end
 end

@@ -5,10 +5,16 @@
   <br>
   <div class="info">
     <strong><p>Welcome to your dashboard, <%= @user.name %></p></strong>
+    <p>Name</p>
+    <p><%= @user.name %></p>
+    <p>Current Employer</p>
+    <p><%= @user.current_employer %></p>
     <p>Cohort</p>
     <p> <%= @user.cohort %></p>
     <p>Location</p>
     <p><%= @user.city_and_state(@user) %></p>
+    <p>Email</p>
+    <p><%= @user.email %></p>
   </div>
   <p>Moving? Got a new job?
   <strong><%= link_to "Update Your Account", edit_user_path %> </p></strong>
