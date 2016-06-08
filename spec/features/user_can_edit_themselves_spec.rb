@@ -1,0 +1,38 @@
+require 'rails_helper'
+
+RSpec.feature "user can edit themselves" do
+  include FeatureHelper
+  it "shows an updated user" do
+    user = User.create(cohort: "1602", name: "Marina Corona", github_id: ENV["github_uid"])
+
+    stub_omniauth
+    visit "/"
+
+    click_on "Sign in with Github"
+
+    expect(current_path).to eq(edit_user_path)
+
+    within(".edit-user-form") do
+      select("1508")
+      fill_in "Name", with: "Malcolm Gladwell"
+      fill_in "Current Employer", with: "Denny's"
+      fill_in "Street Address", with: "1510 Blake Street"
+      fill_in "City", with: "Denver"
+      select("CO")
+      fill_in "Email", with: "email@email.com"
+      click_on "Submit"
+    end
+
+    expect(user.first_login).to eq(false)
+
+    expect(current_path).to eq dashboard_path
+    expect(page).to have_content "1508"
+    expect(page).to not_have_content "1602"
+    expect(page).to have_content "Malcolm Gladwell"
+    expect(page).to not_have_content "Marina Corona"
+    expect(page).to have_content "Denny's"
+    expect(page).to have_content "1510 Blake Street"
+    expect(page).to have_content "Denver, CO"
+    expect(page).to have_content "email@email.com"
+  end
+end
