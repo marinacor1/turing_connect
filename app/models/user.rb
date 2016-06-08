@@ -10,7 +10,11 @@ class User < ActiveRecord::Base
   end
 
   def city_and_state(user)
-    "#{user.city}, #{user.state}"
+    if user.city.nil? || user.state.nil?
+      ""
+    else
+      "#{user.city}, #{user.state}"
+    end
   end
 
   def full_street_address(user)

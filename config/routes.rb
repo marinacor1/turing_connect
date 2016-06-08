@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: 'welcome#show'
   get '/users/map', to: 'users#index'
-  resources :users, only: [:show]
+  resources :users, only: [:show, :edit, :update]
   get "/auth/github", as: :github_login
   get "/auth/github/callback", to: "sessions#create"
   get "/logout", to: "sessions#destroy", as: :logout

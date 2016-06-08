@@ -30,7 +30,6 @@
   overflow: auto;
   color: black;
   font-size: 110%;
-
  }
 
  .login-link {
@@ -38,8 +37,8 @@
   font-size: 110%;
   color: #474747;
   font-size: 110%;
-
  }
+
 .landing-page {
   padding-top: 200px;
   text-align: center;
@@ -60,4 +59,24 @@
 
 .nav>li>a {
   display: none;
+}
+
+.user-dashboard {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  background-color: #fc3c3a;
+  height: 600px;
+
+}
+
+.user-image {
+  background-color: #fc3c3a;
+}
+
+.page-header {
+  font-size: 26px;
+  margin: .5em 0;
+  color: #2ebd59;
+  font-weight: 300;
 }
