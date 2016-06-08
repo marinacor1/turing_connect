@@ -14,7 +14,7 @@ gem 'capybara'
 gem 'responders', '~>2.0'
 gem 'omniauth-github'
 gem "geocoder"
-
+gem 'rails_12factor', group: :production
 gem 'unicorn'
 
 group :development, :test do
