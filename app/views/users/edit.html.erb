@@ -7,7 +7,7 @@
           <%= f.label :cohort, "Cohort", class: "col-md-4 control-label" %>
           <div class="col-md-8">
            <div class="cohort-drop-down">
-          <%= f.collection_select :id, User.all, :id, :cohort, {:prompt => true}, {:class => "cohort"} %>
+          <%= f.collection_select :cohort, User.all, :cohort, :cohort, {:prompt => true}, {:class => "cohort"} %>
             </div>
           </div>
         </div>
@@ -43,8 +43,7 @@
         <div class="form-group">
           <%= f.label :state, "State:", class: "col-md-4 control-label" %>
           <div class="col-md-8">
-          <%= f.collection_select :id, User.all, :id, :state, {:prompt => true}%>
-            <%= f.button :submit %>
+          <%= f.collection_select :state, User.all, :state, :state, {:prompt => true}%>
           </div>
         </div>
 

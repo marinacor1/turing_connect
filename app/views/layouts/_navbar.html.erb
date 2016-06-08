@@ -13,6 +13,9 @@
           <li class="col-md-6 map-link">
             <%= link_to "All Users", users_map_path %>
           </li>
+          <li class="col-md-6 map-link">
+            <%= link_to "Edit Account", edit_user_path(current_user) %>
+          </li>
         <% else %>
           <li class="login-icon">
             <i class="fa fa-github fa-6" aria-hidden="true"></i><%= link_to "Sign in with Github", github_login_path %>
