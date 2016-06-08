@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  geocoded_by :full_street_address
+  after_validation :geocode #runs everytime a model is validated
 
   def self.from_omniauth(auth_info)
     new_user = User.find_by(github_id: auth_info.extra.raw_info.id)
@@ -17,12 +19,9 @@ class User < ActiveRecord::Base
     end
   end
 
-  def full_street_address(user)
-    "#{user.street_address}, #{user.city}, #{user.state}"
+  def full_street_address
+    "#{street_address}, #{city}, #{state}"
   end
 
-  def geocode
-    #saves latitude and longitude to specific row in User table
-  end
 
 end
