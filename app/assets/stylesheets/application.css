@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+
+.navbar-brand {
+  font-family: Noto Sans, arial;
+ }
+
+ .logout-link {
+  float: left;
+  overflow: auto;
+  color: black;
+  font-size: 90%;
+ }
+
+ .map-link {
+  float: left;
+  overflow: auto;
+  color: black;
+  font-size: 110%;
+
+ }
+
+ .login-link {
+  padding: 20px;
+  font-size: 110%;
+  color: #474747;
+  font-size: 110%;
+
+ }
+.landing-page {
+  padding-top: 200px;
+  text-align: center;
+  color: #474747;
+  font-size: 150%;
+  font-family: Josefin Sans, arial;
+  text-shadow: 1px #899bae;
+  background: url(office_sitting.jpeg) no-repeat center;
+  background-size: cover;
+  height: 600px;
+}
+
+.fa {
+  font-family: Josefin Sans, arial;
+  color: #474747;
+  font-size: 110%;
+}
+
+.nav>li>a {
+  display: none;
+}

@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'capybara'
 gem 'responders', '~>2.0'
 gem 'omniauth-github'
+gem "geocoder"
 
 gem 'unicorn'
 

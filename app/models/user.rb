@@ -12,4 +12,12 @@ class User < ActiveRecord::Base
   def city_and_state(user)
     "#{user.city}, #{user.state}"
   end
+
+  def full_street_address(user)
+    "#{user.street_address}, #{user.city}, #{user.state}"
+  end
+
+  def geocode
+    #saves latitude and longitude to specific row in User table
+  end
 end
