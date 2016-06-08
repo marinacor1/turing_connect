@@ -10,7 +10,7 @@ RSpec.feature "user can edit themselves" do
 
     click_on "Sign in with Github"
 
-    expect(current_path).to eq(edit_user_path)
+    expect(current_path).to eq(edit_user_path(user))
 
     within(".edit-user-form") do
       select("1508")
