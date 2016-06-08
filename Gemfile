@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
-gem 'rails_12factor', group: :production
+gem 'country_state_select'
 gem 'pg', '~> 0.15'
 gem 'figaro'
 gem 'sass-rails', '~> 5.0'

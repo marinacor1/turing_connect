@@ -24,4 +24,5 @@ class User < ActiveRecord::Base
   def geocode
     #saves latitude and longitude to specific row in User table
   end
+
 end

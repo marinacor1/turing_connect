@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.feature "user can edit themselves" do
   include FeatureHelper
   it "shows an updated user" do
-    user = User.create(cohort: "1602", name: "Marina Corona", github_id: ENV["github_uid"])
+    user = User.create(cohort: "1602", name: "Marina Corona", city: "Dallas", state: "TX", github_id: ENV["github_uid"])
+    user2 = User.create(cohort: "1508", name: "Tina Turner", city: "Denver", state: "CO", github_id: ENV["github_uid"])
 
     stub_omniauth
     visit "/"
@@ -11,7 +12,7 @@ RSpec.feature "user can edit themselves" do
     click_on "Sign in with Github"
 
     expect(current_path).to eq(edit_user_path(user))
-
+save_and_open_page
     within(".edit-user-form") do
       select("1508")
       fill_in "Name", with: "Malcolm Gladwell"

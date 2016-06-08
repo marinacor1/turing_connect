@@ -1,6 +1,17 @@
 <div class ="edit-user-form">
   <h1>Update Your Account Information</h1>
+
     <%= form_for (@user), :html => {:class => "form-horizontal center"} do |f| %>
+
+        <div class="form-group">
+          <%= f.label :cohort, "Cohort", class: "col-md-4 control-label" %>
+          <div class="col-md-8">
+           <div class="cohort-drop-down">
+          <%= f.collection_select :id, User.all, :id, :cohort, {:prompt => "Cohort Group"}, {:class => "cohort"} %>
+            </div>
+          </div>
+        </div>
+
         <div class="form-group">
           <%= f.label :name, "Name:", class: "col-md-4 control-label" %>
           <div class="col-md-8">
@@ -9,7 +20,7 @@
         </div>
 
         <div class="form-group">
-          <%= f.label :current_e, "Current Employer:", class: "col-md-4 control-label" %>
+          <%= f.label :current_employer, "Current Employer:", class: "col-md-4 control-label" %>
           <div class="col-md-8">
             <%= f.text_field :current_employer, class: "form-control" %>
           </div>
@@ -26,6 +37,13 @@
           <%= f.label :city, "City:", class: "col-md-4 control-label" %>
           <div class="col-md-8">
             <%= f.text_field :city, class: "form-control" %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :state, "State:", class: "col-md-4 control-label" %>
+          <div class="col-md-8">
+          <%= f.collection_select :id, User.all, :id, :state, {:prompt => "State"}, {:class => "state"} %>
           </div>
         </div>
 
