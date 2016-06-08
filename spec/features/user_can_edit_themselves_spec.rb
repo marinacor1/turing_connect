@@ -23,7 +23,7 @@ RSpec.feature "user can edit themselves" do
       fill_in "Email", with: "email@email.com"
       click_on "Submit"
     end
-save_and_open_page
+
     expect(current_path).to eq user_path(user)
     expect(page).to have_content "1508"
     expect(page).to not_have_content "1602"
