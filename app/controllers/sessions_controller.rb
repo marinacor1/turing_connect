@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
     if !(User.find_by(github_id: (request.env["omniauth.auth"].extra.raw_info.id))).nil?
       if user = User.from_omniauth(request.env["omniauth.auth"])
         session[:user_id] = user.id
-        redirect_to root_path
+        redirect_to user
       end
     else
       render file: 'public/404', status: 404

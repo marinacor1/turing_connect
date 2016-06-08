@@ -16,7 +16,7 @@ RSpec.feature "user logs in with github account" do
     expect(page).to have_link "Logout"
   end
 
-  xscenario "user who is not authorized will see error page" do
+  scenario "user who is not authorized will see error page" do
     User.create(cohort: "1602", name: "Marina Corona", github_id: ENV["github_uid"])
     stub_unauthorized_omniauth
 
@@ -25,7 +25,7 @@ RSpec.feature "user logs in with github account" do
     click_on "Sign in with Github"
 
     expect(page.status_code).to eq(404)
-    expect(page).to have_content "The page you were looking for doesn't exist"
+    expect(page).to have_content "Looks like you are not authorized to access"
 
   end
 end

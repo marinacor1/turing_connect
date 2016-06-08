@@ -19,6 +19,7 @@ gem 'unicorn'
 
 group :development, :test do
   gem 'byebug'
+  gem 'shoulda-matchers', github: 'thoughtbot/shoulda-matchers'
   gem 'pry'
   gem 'launchy'
   gem 'rspec-rails'

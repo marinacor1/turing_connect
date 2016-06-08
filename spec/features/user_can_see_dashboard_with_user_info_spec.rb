@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'feature_helper'
 
 RSpec.feature "user can see dashboard with user info" do
   include FeatureHelper
@@ -13,7 +14,7 @@ RSpec.feature "user can see dashboard with user info" do
     expect(current_path).to eq user_path(user)
 
     expect(page.status_code).to eq(200)
-    expect(page).to have_content "Name: Marina Corona"
+    expect(page).to have_content "Hello, Marina Corona"
     expect(page).to have_content "Cohort: 1602"
   end
 end
