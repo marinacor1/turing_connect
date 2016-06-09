@@ -35,6 +35,9 @@
       <li class="logout-link">
         <%= link_to "Logout", logout_path, method: :delete %>
       </li>
+      <li class="greeting">
+        Hello, <%=current_user.name  %>
+      </li>
       <% else %>
         <li class="login-with-github">
           <%= link_to "Sign in with Github", github_login_path %>
