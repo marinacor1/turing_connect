@@ -105,5 +105,5 @@ users = User.create!([{cohort: "1406", state: "AK"},
    {cohort: "1406", state: "WA"},
    {cohort: "1406", state: "WI"},
    {cohort: "1406", state: "WV"},
-   {cohort: "1406", state: "WY"},
-]),
+   {cohort: "1406", state: "WY"}
+])
