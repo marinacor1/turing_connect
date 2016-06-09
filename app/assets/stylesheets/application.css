@@ -117,20 +117,14 @@
 
 .user-image {
   background-color: #1eccbe;
-  padding-right: 700px;
-  padding-left: 150px;
-  float: left;
-  display: inline-block;
 }
 .welcome {
   font-size: 200%;
 }
 
-.user-dashboard-info {
-  padding-left: 500px;
-  padding-bottom: 600px;
-  float: left;
-
+.user-info-table {
+  padding: 50px;
+  padding-right: 200px;
 }
 .page-header {
   font-size: 29px;
