@@ -74,7 +74,7 @@
   font-size: 150%;
   font-family: Josefin Sans, arial;
   text-shadow: 1px #899bae;
-  background: url(office_sitting.jpeg) no-repeat center;
+  background: url("https://images.unsplash.com/photo-1424298397478-4bd87a6a0f0c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8bdec4a5365fabf1948d8f1e9039b47a") no-repeat center;
   background-size: cover;
   height: 600px;
 }
