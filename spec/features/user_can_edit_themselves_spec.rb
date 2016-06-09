@@ -33,14 +33,5 @@ RSpec.feature "user can edit themselves" do
     expect(page).to have_content "Denver, CO"
     expect(page).to have_content "email@email.com"
 
-    click_on "Logout"
-    stub_omniauth
-    visit "/"
-
-    click_on "Sign in with Github"
-
-    expect(user.first_login).to eq(false)
-
-    expect(current_path).to eq user_path(user)
   end
 end
