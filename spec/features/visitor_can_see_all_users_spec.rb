@@ -1,17 +1,19 @@
 require 'rails_helper'
 
 RSpec.feature "visitor can see all users" do
-  xit "shows a list with attributes for user" do
-    User.create(cohort: "1606", name: "Andy Swanson", current_employer: "AlamoU", github_id: "482", street_address: "910 Santa Fe Dr.", city: "Denver", state: "CO")
-    visit root_path
-    stub_omniauth
+  include FeatureHelper
+  it "shows a list with attributes for user" do
+    user = User.create(cohort: "1602", name: "Marina Corona", city: "Dallas", state: "TX", github_id: ENV["github_uid"])
 
-    click_on "All Users"
+    stub_omniauth
+    visit root_path
+    click_on "Sign in with Github"
+
+    click_on "Map"
 
     expect(current_path).to eq(users_map_path)
-    expect(page).to have_content("Cohort: 1606")
-    expect(page).to have_content("Name: Andy Swanson")
-    expect(page).to have_content("Current Employer: AlamoU")
-    expect(page).to have_content("Location: Denver, CO")
+    expect(page).to have_content("Cohort: 1602")
+    expect(page).to have_content("Marina Corona")
+    expect(page).to have_content("Location: Dallas, TX")
   end
 end
