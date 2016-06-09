@@ -18,6 +18,24 @@
   font-family: Noto Sans, arial;
  }
 
+.user-shadow {
+  padding-top: 13px;
+  font-size: 1.4em;
+}
+.remove {
+  padding-top: 13px;
+  font-size: 1.4em;
+}
+
+.map-marker {
+  padding-top: 13px;
+  font-size: 1.4em;
+}
+.eraser {
+  padding-top: 13px;
+  font-size: 1.4em;
+}
+
  .logout-link {
   float: left;
   overflow: auto;
@@ -79,7 +97,7 @@
 
 .greeting {
   padding-top: 15px;
-  padding-left: 550px;
+  padding-left: 520px;
 }
 
 .user-image {

@@ -1,5 +1,4 @@
 <nav class="navbar navbar-static-top">
-  <div class="container-fluid">
       <ul class="nav navbar-nav">
         <% if current_user %>
           <li class="navbar-brand">
@@ -8,24 +7,36 @@
           <li class="greeting navbar-right">
             Hello, <%= current_user.name %>
           </li>
-           <li class="logout-link">
-            <%= link_to "Logout", logout_path, method: :delete %>
-          </li>
           <li class="map-link">
-            <%= link_to "All Users", users_map_path %>
+            <%= link_to "Map", users_map_path %>
+          </li>
+          <li class="map-marker">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
           </li>
           <li class="edit-link">
             <%= link_to "Edit Account", edit_user_path(current_user) %>
           </li>
+          <li class="eraser">
+            <span class="glyphicon glyphicon-erase" aria-hidden="true"></span>
+          </li>
+
           <li class= "dashboard-link">
             <%= link_to "Dashboard", user_path(current_user) %>
           </li>
-        <% else %>
+          <li class="user-shadow">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          </li>
+          <li class="logout-link">
+            <%= link_to "Logout", logout_path, method: :delete %>
+          </li>
+          <li class="remove">
+            <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+          </li>
+           <% else %>
           <li class="login-icon">
             <i class="fa fa-github fa-6" aria-hidden="true"></i><%= link_to "Sign in with Github", github_login_path %>
           </li>
         <% end %>
       </ul>
     </div>
-  </div>
 </nav>
