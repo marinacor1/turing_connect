@@ -12,7 +12,7 @@ RSpec.feature "user can edit themselves" do
     click_on "Sign in with Github"
 
     expect(current_path).to eq(edit_user_path(user))
-
+save_and_open_page
     within(".edit-user-form") do
       select( "1508", from: "Cohort")
       fill_in "Name", with: "Malcolm Gladwell"
@@ -41,7 +41,7 @@ RSpec.feature "user can edit themselves" do
     click_on "Sign in with Github"
 
     expect(user.first_login).to eq(false)
-    
+
     expect(current_path).to eq user_path(user)
   end
 end

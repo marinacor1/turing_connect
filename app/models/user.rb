@@ -21,5 +21,22 @@ class User < ActiveRecord::Base
     "#{street_address}, #{city}, #{state}"
   end
 
+  def self.unique_states
+    users = User.all
+    all_states = users.map do |user|
+      user.state
+    end
+    return all_states.uniq.compact.sort
+
+  end
+
+  def self.unique_cohorts
+    users = User.all
+    all_cohorts = users.map do |user|
+      user.cohort
+    end
+    return all_cohorts.uniq.compact.sort
+  end
+
 
 end
