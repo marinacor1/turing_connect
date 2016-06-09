@@ -119,6 +119,8 @@
   background-color: #1eccbe;
   padding-right: 700px;
   padding-left: 150px;
+  float: left;
+  display: inline-block;
 }
 .welcome {
   font-size: 200%;
@@ -127,6 +129,8 @@
 .user-dashboard-info {
   padding-left: 500px;
   padding-bottom: 600px;
+  float: left;
+
 }
 .page-header {
   font-size: 29px;
@@ -145,6 +149,10 @@
   background-size: cover;
   padding: 50px;
   height: 1000px;
+}
+
+.user-label {
+  font-weight: 300;
 }
 
 .cohort-drop-down {

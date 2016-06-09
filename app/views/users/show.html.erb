@@ -1,20 +1,23 @@
 <div class="user-dashboard">
   <div class="page-header">User Dashboard</div>
   <div class="user-image">
-    <%= image_tag(@user.image, width: "250", height: "250") %>
-  </div>
-  <br>
-  <br>
-  <div class="user-dashboard-info">
-    <strong><p>Name</p></strong>
-    <p><%= @user.name %></p>
-    <strong><p>Current Employer</p></strong>
-    <p><%= @user.current_employer %></p>
-    <strong><p>Cohort</p></strong>
-    <p> <%= @user.cohort %></p>
-    <strong><p>Location</p></strong>
-    <p><%= @user.full_street_address %></p>
-    <strong><p>Email</p></strong>
-    <p><%= @user.email %></p>
-  </div>
 </div>
+<table style = "width: 60%">
+  <tr>
+    <td><%= image_tag(@user.image, width: "250", height: "250") %></td>
+    <td>
+      <div class="user-dashboard-info">
+      <strong><p class="user-label">Name</p></strong>
+      <p class="user-detail"><%= @user.name %></p>
+      <strong><p class="user-label">Current Employer</p></strong>
+      <p class="user-detail"><%= @user.current_employer %></p>
+      <strong><p class="user-label">Cohort</p></strong>
+      <p class="user-detail"> <%= @user.cohort %></p>
+      <strong><p class="user-label">Location</p></strong>
+      <p class="user-detail"><%= @user.full_street_address %></p>
+      <strong><p class="user-label">Email</p></strong>
+      <p class="user-detail"><%= @user.email %></p>
+      </div>
+    </td>
+  </tr>
+</table>
