@@ -103,9 +103,16 @@
 .user-image {
   background-color: #1eccbe;
   padding-right: 700px;
-  padding-left: 50px;
+  padding-left: 150px;
+}
+.welcome {
+  font-size: 200%;
 }
 
+.user-dashboard-info {
+  padding-left: 500px;
+  padding-bottom: 600px;
+}
 .page-header {
   font-size: 29px;
   margin: .5em 0;
