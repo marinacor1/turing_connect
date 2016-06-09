@@ -73,10 +73,12 @@
 
 .navbar-brand {
   font-size: 130%;
+  font-weight: bold;
+  padding-top: 30px;
 }
 
 .greeting {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-left: 550px;
 }
 

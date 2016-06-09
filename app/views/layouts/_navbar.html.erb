@@ -8,7 +8,7 @@
           <li class="greeting navbar-right">
             Hello, <%= current_user.name %>
           </li>
-          <li class="logout-link">
+           <li class="logout-link">
             <%= link_to "Logout", logout_path, method: :delete %>
           </li>
           <li class="map-link">
@@ -18,7 +18,7 @@
             <%= link_to "Edit Account", edit_user_path(current_user) %>
           </li>
           <li class= "dashboard-link">
-            <%= link_to "My Dashboard", user_path(current_user) %>
+            <%= link_to "Dashboard", user_path(current_user) %>
           </li>
         <% else %>
           <li class="login-icon">
