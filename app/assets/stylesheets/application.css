@@ -83,13 +83,14 @@
 
 .edit-user-form {
   text-align: center;
-  color: white;
+  color: #333333;
   font-size: 130%;
   text-shadow: 1px #899bae;
   background-color: #1eccbe;
   background-size: cover;
   padding: 50px;
   height: 600px;
+
 }
 
 .cohort-drop-down {
