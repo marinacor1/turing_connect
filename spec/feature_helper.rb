@@ -26,7 +26,7 @@ module FeatureHelper
       provider: 'github',
       extra: {
         raw_info: {
-                    id: "0340",
+                    id: "034090",
                     name: "Marina Corona",
                     avatar_url: "ljsfls",
                     },

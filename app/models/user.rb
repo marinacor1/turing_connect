@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
   geocoded_by :full_street_address
   after_validation :geocode #runs everytime a model is validated
+  enum role: %w(default admin)
+  scope :admin?, -> { where(role: 1) }
 
   def self.from_omniauth(auth_info)
     new_user = User.find_by(github_id: auth_info.extra.raw_info.id)

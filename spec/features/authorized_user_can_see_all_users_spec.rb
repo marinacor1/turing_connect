@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "visitor can see all users" do
+RSpec.feature "logged in user can see all users" do
   include FeatureHelper
   it "shows a list with attributes for user" do
     user = User.create(cohort: "1602", name: "Marina Corona", city: "Dallas", state: "TX", github_id: ENV["github_uid"])
