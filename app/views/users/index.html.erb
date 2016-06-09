@@ -1,15 +1,2 @@
-<div class="container">
-  <h1>All Users</h1>
-  <div class="card card-block">
-    <% @user.each do |user| %>
-      <h4 class="card-title">Name: <%= user.name %></h4>
-      <p class="card-text">
-      Cohort: <%= user.cohort %>
-      <p>Current Employer: <%= user.current_employer %></p>
-      <% if user.city %>
-        <p>Location: <%= user.city_and_state(user) %></p>
-      <% end %>
-    </p>
-    <% end %>
-</div>
-</div>
+
+    <div id="map"></div>

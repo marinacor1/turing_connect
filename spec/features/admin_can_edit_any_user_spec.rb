@@ -2,18 +2,20 @@ require 'rails_helper'
 
 RSpec.feature "admin can edit anyone" do
   include FeatureHelper
-  xit "shows an updated user" do
+  it "shows an updated user" do
     user = User.create(cohort: "1602", name: "Marina Corona", city: "Dallas", state: "TX", github_id: ENV["github_uid"])
     user2 = User.create(cohort: "1508", name: "Tina Turner", city: "Denver", state: "CO", github_id: ENV["github_uid"])
-    admin = User.create(name: "Jeff Cassimir", city: "Denver", state: "CO", github_id: ENV["github_uid"], role: 1)
-    stub_omniauth
+    admin = User.create(name: "Michael Dao", city: "Denver", state: "CO", github_id: ENV["mike_uid"], role: 1)
+    admin_omniauth
     visit "/"
 
     click_on "Sign in with Github"
 
-    expect(current_path).to eq(edit_user_path(admin))
+    expect(current_path).to eq(admin_dashboard_path)
 
     click_on "See all users"
+
+    expect(current_path).to eq(admin_users_path)
 
     click_on "Edit Marina's Account"
 

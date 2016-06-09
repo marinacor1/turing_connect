@@ -41,4 +41,24 @@ module FeatureHelper
       })
   end
 
+  def admin_omniauth
+    OmniAuth.config.test_mode = true
+    OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
+      provider: 'github',
+      extra: {
+        raw_info: {
+                    id: ENV['mike_uid'],
+                    name: "Michael Dao",
+                    avatar_url: "ljsfls",
+                    },
+
+      },
+      credentials: {
+        token: ENV["github_token"]
+      },
+          info: {
+            image: "lsjfls"
+          }
+      })
+  end
 end
