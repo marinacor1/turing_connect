@@ -55,6 +55,8 @@
    font-size: 130%;
  }
 
+ a:visited {color:#333333;}
+
  .map-link {
   float: left;
   overflow: auto;
