@@ -17,7 +17,7 @@ RSpec.feature "admin can edit anyone" do
 
     expect(current_path).to eq(admin_users_path)
 
-    click_on "Edit Marina's Account"
+    click_on "Update Marina Corona's Account"
 
     expect(current_path).to eq(edit_user_path(user))
 
