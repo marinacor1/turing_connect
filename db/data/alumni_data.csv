@@ -17,7 +17,6 @@ cohort,name,current_employer,github_id,street_address,city,state
 1406,Marc Garreau,QuickLeft,3621728,902 Pearl St,Boulder,CO
 1406,Andrew Watkins,InfluxDB,7582765,"150 Spear St, Suite 1750",San Francisco,CA
 1406,Allison Larson,Bonobos,7552541,45 W. 25th St,New York,NY
-,,,,,,
 1407,Glen Egbert,HubTran,5980245,6734 Joliet Road,Countryside,IL
 1407,Ian Anderson,Wellmatch/iTriage,5242189,1500 Wynkoop St,Denver,CO
 1407,Jim Sutton,CaptainU,5419731,910 Santa Fe Dr.,Denver,CO
@@ -25,7 +24,6 @@ cohort,name,current_employer,github_id,street_address,city,state
 1407,Luke Aiken,UnitedHealth,3201898,,,
 1407,Sara Simon,Vermont Public Radio,5553382,365 Troy Ave,Colchester,VT
 1407,Rolando Navarette,Splice,3431580,612 Howard Street #300,San Francisco,CA
-,,,,,,
 1409,David Bayendor,Oracle,4405520,7604 Technology Way,Denver,CO
 1409,Victoria Harrod,InQuicker,5874167,631 Second Avenue South,Nashville,TN
 1409,Kate Lane,UpToDate,3933878,95 Sawyer Rd,Waltham,MA
@@ -38,7 +36,6 @@ cohort,name,current_employer,github_id,street_address,city,state
 1409,Alex Jensen,,2790993,,,
 1409,Chandra Carney,,8561841,,,
 1409,Zachary Routhier,NationStar,8505719,10350 Park Meadows Dr,Lone Tree,CO
-,,,,,,
 1410,Alex Robinson,QuickLeft,8812335,902 Pearl St,Boulder,CO
 1410,Bargavi Satpathy,Wombat Security Technologies,8531351,3030 Penn Ave,Pittsburgh,PA
 1410,Brandon Mrsny,Wombat Security Technologies,8440504,3030 Penn Ave,Pittsburgh,PA
@@ -53,7 +50,6 @@ cohort,name,current_employer,github_id,street_address,city,state
 1410,Nathan Owsiany,GoSpotCheck,3827810,1520 Market St,Denver ,CO
 1410,Orion Osborn,Invoca,869456,1025 Chapala St,Santa Barbara,CA
 1410,Scott Crawford,Bonobos,8398867,45 W. 25th St,New York,NY
-,,,,,,
 1412,Austin Wood,Globality,3409645,8 Homewood Pl#150,Menlo Park,CA
 1412,DJ Greenfield,ProCore,9127698,6309 Carpinteria Ave,Carpinteria,CA
 1412,Kit Pearson,YoShirt,3293289,2301 E 7th Street Suite E200,Los Angeles,CA
@@ -66,7 +62,6 @@ cohort,name,current_employer,github_id,street_address,city,state
 1412,Trey Tomlinson,CaptainU,9888146,910 Santa Fe Dr.,Denver,CO
 1412,Dustin Gault,eGauge Systems,7361182,4730 Walnut St. #110,Boulder,CO
 1412,Jeff Gu,Minerva,5934106,2150 Gold Street,Alviso,CA
-,,,,,,
 1502,Andrew Carmer,Turing,8550001,1510 Blake St,Denver,CO
 1502,David Daniel,Cirro Web Development,9052511,2500 Larimer St,Denver,CO
 1502,Eric Dowty,Invoca,10349516,1025 Chapala St,Santa Barbara,CA
@@ -78,7 +73,6 @@ cohort,name,current_employer,github_id,street_address,city,state
 1502,Thomas Leskin,Gozooga,5550155,140 Island Way,Clearwater,FL
 1502,Kyle Henson,MyRounding Solutions,8650499,370 17th Street,Denver,CO
 1502,Lori Culberson,,8315971,,,
-,,,,,,
 1503,Brett Grigsby,DagonIT,8657755,700 East 24th Avenue,Denver,CO
 1503,Drew Reynolds,Gramercy Tech,2224702,143 W. 29th Street,New York,NY
 1503,Josh Cass,Foraker Labs,10728814,1216 Pearl St.,Boulder ,CO
@@ -89,7 +83,6 @@ cohort,name,current_employer,github_id,street_address,city,state
 1503,Sally MacNicholas,CaptainU,10360728,910 Santa Fe Dr.,Denver,CO
 1503,Vanessa Gomez,,10290117,,,
 1503,Whitney Smestad,CaptainU,8561426,910 Santa Fe Dr.,Denver ,CO
-,,,,,,
 1505,Dmitry Vizersky,,9903275,,,
 1505,Jamie Kawahara,Active Network,8076169,10182 Telesis Ct #100,San Diego,CA
 1505,Adam Caron,DIRECTV,7072066,2230 E. Imperial Hwy,El Segundo,CA
@@ -102,7 +95,6 @@ cohort,name,current_employer,github_id,street_address,city,state
 1505,Mike Dorrance,G2 Crowd,3131114,1770 1st St,Highland Park,IL
 1505,Mitch Ashby,,10623771,,,
 1505,Sebastian Abondano,Terakeet,1958868,318 S Clinton St,Syracuse,NY
-,,,,,,
 1507,Alon Waisman,ClearChoice Dental Implant Centers,10508902,8200 E Belleview Ave,Greenwood Village,CO
 1507,Bret Doucette,Zipskee,10092063,1200 Vine St.,Denver,CO
 1507,Chris Cenatiempo,Real Geeks,10479595,1051 Keolu Dr.,Kailua,HI
@@ -123,7 +115,6 @@ cohort,name,current_employer,github_id,street_address,city,state
 1507,Russell Harms,,7073471,,,
 1507,Travis Haby,Education,10556957,,,
 1507,Tyler Graham,AMG National Trust Bank,10191383,6295 Greenwood Plaza Blvd,Greenwood Village,CO
-,,,,,,
 1508,Aaron Careaga,KITE,2416316,10989 Red Run Blvd,Owings Mills, MD
 1508,Adam Jensen,iTriage/Wellmatch,10334352,1500 Wynkoop St,Denver,CO
 1508,Amber Crawford,StitchFix,11097011,731 Market St,San Francisco,CA
@@ -141,7 +132,6 @@ cohort,name,current_employer,github_id,street_address,city,state
 1508,Sekhar Paladugu,AdHawk,10353221,,New York,NY
 1508,Torie Warren,CareZone,8861750,1520 Bellevue Ave,Seattle,WA
 1508,Tyler Komoroske,AllState,11931899,222 S Mill Ave Fl 6,Tempe,AZ
-,,,,,,
 1510,Aaron Greenspan,Rachio,13969784,,Denver,CO
 1510,Beth Sebian,Turing School of Software and Design,12875824,1510 Blake St.,Denver,CO
 1510,Brant Wellman,,6422641,,,
@@ -161,3 +151,4 @@ cohort,name,current_employer,github_id,street_address,city,state
 1510,Shannon Paige,AllState,12816548,222 S Mill Ave Fl 6,,
 1510,Steve Pentler,,13510375,,,
 1510,Steven Olson,Granicus,12125888,707 17th St,Denver,CO
+1602,Marina Corona,,14285122,,Denver,CO

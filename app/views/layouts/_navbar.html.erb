@@ -15,7 +15,11 @@
           <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
         </li>
       <li>
-        <a href="/users/:id">Dashboard</a>
+         <% if current_user.admin? %>
+        <%= link_to "Dashboard", admin_dashboard_path %>
+        <% else %>
+        <%= link_to "Dashboard", user_path(current_user) %>
+        <% end %>
       </li>
       <li class="map-marker">
         <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
