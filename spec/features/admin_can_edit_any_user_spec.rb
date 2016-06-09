@@ -13,7 +13,7 @@ RSpec.feature "admin can edit anyone" do
 
     expect(current_path).to eq(admin_dashboard_path)
 
-    click_on "See all users"
+    click_on "View All Users"
 
     expect(current_path).to eq(admin_users_path)
 

@@ -1,0 +1,29 @@
+<div= "containter">
+<div class="col md- 4 card">
+  <div class="users-index-page">
+    <h1>Edit Any Alumni</h1>
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>#</th>
+          <th>Cohort</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Update Account</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <% @users.each_with_index do |user, index| %>
+            <td><%= index + 1 %></td>
+            <td><%= user.cohort %></td>
+            <td><%= user.name %></td>
+            <td><%= user.email %></td>
+            <td><%= link_to "Update #{user.name}'s Account", edit_user_path(user) %></td>
+        </tr>
+        <% end %>
+    </tbody>
+    </table>
+  </div>
+</div>
+</div>
