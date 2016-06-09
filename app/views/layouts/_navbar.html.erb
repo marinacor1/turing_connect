@@ -34,7 +34,10 @@
           </li>
            <% else %>
           <li class="login-icon">
-            <i class="fa fa-github fa-6" aria-hidden="true"></i><%= link_to "Sign in with Github", github_login_path %>
+            <span class="fa fa-github fa-6" aria-hidden="true"></span>
+          </li>
+          <li class="login-with-github">
+            <%= link_to "Sign in with Github", github_login_path %>
           </li>
         <% end %>
       </ul>

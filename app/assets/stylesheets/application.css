@@ -36,11 +36,21 @@
   font-size: 1.4em;
 }
 
+.login-icon {
+  padding-left: 20px;
+  padding-top: 19px;
+  font-size: 1.6em;
+}
+
  .logout-link {
   float: left;
   overflow: auto;
   color: black;
   font-size: 90%;
+ }
+
+ .login-with-github {
+   padding-top: 10px;
  }
 
  .map-link {
