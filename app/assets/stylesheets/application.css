@@ -62,23 +62,31 @@
 }
 
 .user-dashboard {
-  padding-top: 20px;
-  text-align: center;
-  color: white;
+  color: #333333;
   background-color: #1eccbe;
   height: 800px;
+}
 
+.user-info {
+  padding-bottom: 70px;
+}
+
+.greeting {
+  padding-left: 600px;
 }
 
 .user-image {
   background-color: #1eccbe;
+  padding-right: 700px;
+  padding-left: 50px;
 }
 
 .page-header {
-  font-size: 26px;
+  font-size: 29px;
   margin: .5em 0;
-  color: #2ebd59;
+  color: #333333;
   font-weight: 300;
+  text-align: center;
 }
 
 .edit-user-form {
@@ -90,7 +98,6 @@
   background-size: cover;
   padding: 50px;
   height: 600px;
-
 }
 
 .cohort-drop-down {

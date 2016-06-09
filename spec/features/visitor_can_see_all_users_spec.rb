@@ -5,7 +5,7 @@ RSpec.feature "visitor can see all users" do
     User.create(cohort: "1606", name: "Andy Swanson", current_employer: "AlamoU", github_id: "482", street_address: "910 Santa Fe Dr.", city: "Denver", state: "CO")
     visit root_path
     stub_omniauth
-save_and_open_page
+
     click_on "All Users"
 
     expect(current_path).to eq(users_map_path)
