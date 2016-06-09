@@ -39,7 +39,7 @@
 
 .login-icon {
   padding-left: 20px;
-  padding-top: 19px;
+  padding-top: 10px;
   font-size: 1.6em;
 }
 
@@ -51,9 +51,7 @@
  }
 
  .login-with-github {
-   padding-top: 10px;
-   padding-left: 1000px;
-   font-size: 130%;
+   padding-left: 800px;
  }
 
  a:visited {color:#333333;}
@@ -66,10 +64,7 @@
  }
 
  .login-link {
-  padding: 20px;
-  font-size: 110%;
   color: #474747;
-  font-size: 110%;
  }
 
 .landing-page {
