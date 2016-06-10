@@ -6,7 +6,7 @@ class UsersController < ApplicationController
       marker.lat user.latitude
       marker.lng user.longitude
       marker.infowindow user.current_employer
-      marker.picture({"url" => "http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-32.png", "width" => 32, "height" => 32})
+      marker.picture({"url" => "https://maps.gstatic.com/mapfiles/ms2/micons/blue.png", "width" => 32, "height" => 32})
       marker.json({name: user.name})
     end
   end
