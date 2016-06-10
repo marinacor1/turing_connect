@@ -16,3 +16,15 @@
 .user-image {
   background-color: #1eccbe;
 }
+
+.user-info {
+  padding-bottom: 70px;
+}
+
+.page-header {
+  font-size: 29px;
+  margin: .5em 0;
+  color: #333333;
+  font-weight: 300;
+  text-align: center;
+}

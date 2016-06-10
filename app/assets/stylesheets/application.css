@@ -21,19 +21,6 @@ html, body {
 
  a:visited {color:#333333;}
 
-.landing-page {
-  padding-top: 200px;
-  text-align: center;
-  color: #474747;
-  font-size: 150%;
-  font-family: 'Josefin Sans', Arial, sans-serif;
-  text-shadow: 1px #899bae;
-  background: url("https://images.unsplash.com/photo-1424298397478-4bd87a6a0f0c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8bdec4a5365fabf1948d8f1e9039b47a") no-repeat center;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
 
 .fa {
   font-family: 'Josefin Sans', Arial, sans-serif;
@@ -50,25 +37,8 @@ html, body {
   background-color: #1eccbe;
 }
 
-.user-info {
-  padding-bottom: 70px;
-}
-
 .welcome {
   font-size: 200%;
-}
-
-.page-header {
-  font-size: 29px;
-  margin: .5em 0;
-  color: #333333;
-  font-weight: 300;
-  text-align: center;
-}
-
-.edit-links-bottom {
-  text-align: center;
-  text-size: 200%;
 }
 
 #map {
