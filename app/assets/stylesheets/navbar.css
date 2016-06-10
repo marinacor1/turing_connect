@@ -1,0 +1,60 @@
+.navbar-brand {
+  font-family: Noto Sans, arial;
+ }
+
+.user-shadow {
+  padding-top: 13px;
+  font-size: 1.4em;
+}
+.remove {
+  padding-top: 13px;
+  font-size: 1.4em;
+}
+
+.map-marker {
+  padding-top: 13px;
+  font-size: 1.4em;
+}
+.eraser {
+  padding-top: 13px;
+  font-size: 1.4em;
+}
+
+.login-icon {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 1.6em;
+}
+
+ .logout-link {
+  float: left;
+  overflow: auto;
+  color: black;
+  font-size: 90%;
+ }
+
+ .login-with-github {
+   padding-left: 800px;
+ }
+
+  .map-link {
+   float: left;
+   overflow: auto;
+   color: black;
+   font-size: 110%;
+  }
+
+  .login-link {
+   color: #474747;
+  }
+
+  .navbar-brand {
+    font-size: 130%;
+    font-weight: bold;
+    padding-top: 30px;
+  }
+
+  .greeting {
+    padding-top: 15px;
+    padding-left: 520px;
+  }
