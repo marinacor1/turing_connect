@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   before_action :logged_in_user
   def index
-    @users = User.all
-    binding.pry
+    users = User.all
+    @users = users.where.not(name: nil)
     @hash = Gmaps4rails.build_markers(@users) do |user, marker|
       marker.lat user.latitude
       marker.lng user.longitude
