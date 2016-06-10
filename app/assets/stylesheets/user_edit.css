@@ -1,0 +1,22 @@
+.edit-user-form {
+  text-align: center;
+  color: #333333;
+  font-size: 130%;
+  text-shadow: 1px #899bae;
+  background-color: #1eccbe;
+  background-size: cover;
+  padding: 50px;
+  height: 1000px;
+}
+
+.cohort-drop-down {
+  padding-right: 700px;
+}
+
+.state-dropdown {
+  padding-right: 700px;
+}
+
+.edit-user-submission {
+  padding-right: 300px;
+}
