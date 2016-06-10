@@ -1,13 +1,34 @@
 marina:
+  id: 1
   cohort: "1602"
   name: "Marina Corona"
   github_id: ENV["github_uid"]
 
 andy:
-    cohort: "1606"
+    id: 2
+    cohort: "1508"
     name: "Andy Swanson"
     current_employer: "AlamoU"
     github_id: "482"
     street_address: "910 Santa Fe Dr."
     city: "Denver"
     state: "CO"
+
+sam:
+  id: 3
+  cohort: "1602"
+  name: "Sam Jones"
+  current_employer: "Turing"
+  github_id: "482"
+  street_address: "910 Santa Fe Dr"
+  city: "Austin"
+  state: "TX"
+
+admin:
+  id: 4
+  cohort: "1410"
+  name: "Michael Dao"
+  city: "Denver"
+  state: "CO"
+  github_id: ENV["mike_uid"]
+  role: 1
