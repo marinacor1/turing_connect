@@ -19,6 +19,8 @@ html, body {
   padding: 0
 }
 
+
+
 .navbar-brand {
   font-family: Noto Sans, arial;
  }
@@ -99,6 +101,11 @@ html, body {
   color: #333333;
   background-color: #1eccbe;
   height: 800px;
+}
+
+.users-index-page {
+  padding-left: 60px;
+  background-color: #1eccbe;
 }
 
 .user-info {

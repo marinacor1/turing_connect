@@ -5,7 +5,7 @@ RSpec.feature "admin can edit anyone" do
   it "shows an updated user" do
     user = User.create(cohort: "1602", name: "Marina Corona", city: "Dallas", state: "TX", github_id: ENV["github_uid"])
     user2 = User.create(cohort: "1508", name: "Tina Turner", city: "Denver", state: "CO", github_id: ENV["github_uid"])
-    admin = User.create(name: "Michael Dao", city: "Denver", state: "CO", github_id: ENV["mike_uid"], role: 1)
+    admin = User.create(name: "Michael Dao", cohort: "1410", city: "Denver", state: "CO", github_id: ENV["mike_uid"], role: 1)
     admin_omniauth
     visit "/"
 
