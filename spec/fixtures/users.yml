@@ -2,6 +2,9 @@ marina:
   id: 1
   cohort: "1602"
   name: "Marina Corona"
+  street_address: "1510 Blake Street"
+  city: "Denver"
+  state: "CO"
   github_id: ENV["github_uid"]
 
 andy:

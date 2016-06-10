@@ -4,7 +4,7 @@ require 'feature_helper'
 RSpec.feature "user can see dashboard with user info" do
   include FeatureHelper
   it "user will see all correct attributes for him or herself" do
-    user = User.create(cohort: "1602", name: "Marina Corona", github_id: ENV["github_uid"], first_login: false)
+    user = User.create(cohort: "1602", name: "Marina Corona", city: "Atlanta", state: "Georgia", github_id: ENV["github_uid"], first_login: false)
 
     stub_omniauth
     visit "/"

@@ -1,7 +1,15 @@
 class UsersController < ApplicationController
   before_action :logged_in_user
   def index
-    @user = User.all
+    @users = User.all
+    binding.pry
+    @hash = Gmaps4rails.build_markers(@users) do |user, marker|
+      marker.lat user.latitude
+      marker.lng user.longitude
+      marker.infowindow user.current_employer
+      marker.picture({"url" => "http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-32.png", "width" => 32, "height" => 32})
+      marker.json({name: user.name})
+    end
   end
 
   def show

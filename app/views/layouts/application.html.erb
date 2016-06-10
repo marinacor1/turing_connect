@@ -18,17 +18,5 @@
     <% end %>
 
     <%= yield %>
-
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 39.7496354, lng: -105.0001058},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBawx0stcXYxQIkKqDEqCn992Qm5fZHFsA&callback=initMap"
-    async defer></script>
-  </body>
+</body>
 </html>

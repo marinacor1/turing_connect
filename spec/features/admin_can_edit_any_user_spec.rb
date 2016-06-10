@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature "admin can edit anyone" do
   include FeatureHelper
   it "shows an updated user" do
-    user = User.create(cohort: "1508")
+    user = User.create(cohort: "1508", city: "Miami", state: "FL")
     admin = User.create(name: "Michael Dao", cohort: "1410", city: "Denver", state: "CO", github_id: ENV["mike_uid"], role: 1)
     admin_omniauth
     visit "/"
