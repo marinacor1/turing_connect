@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user
   def index
     @users = User.all
+    binding.pry
     @hash = Gmaps4rails.build_markers(@users) do |user, marker|
       marker.lat user.latitude
       marker.lng user.longitude
