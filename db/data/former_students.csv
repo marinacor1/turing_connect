@@ -1,4 +1,4 @@
-Cohort,Name,Current Employer,GitHub ID,Street Address,City,State
+cohort,name,current_employer,github_id,street_address,city,state
 1406,Alan Smith,CaptainU,4818182,910 Santa Fe Dr.,Denver,CO
 1406,Andy Mention,Wellmatch,2694765,1500 Wynkoop St,Denver,CO
 1406,Chad Brading,Zoho,6863100,4141 Hacienda Dr,Pleasanton,CA
