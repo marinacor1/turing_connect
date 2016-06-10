@@ -24,13 +24,13 @@
       <li class="map-marker">
         <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
       </li>
-      <li>
-        <a href="/users/map">Map</a>
+      <li class = "map-link">
+        <%= link_to "Map", users_map_path %>
       </li>
       <li class="eraser">
         <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
       </li>
-      <li>
+      <li class= "edit-link">
         <a href="/users/<%= current_user.id %>/edit">Edit Account</a>
       </li>
       <li class="remove">

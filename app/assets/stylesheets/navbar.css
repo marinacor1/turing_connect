@@ -2,6 +2,11 @@
   font-family: Noto Sans, arial;
  }
 
+ .navbar.navbar-default {
+   padding-top: 10px;
+   margin-bottom: 0px !important;
+ }
+
 .user-shadow {
   padding-top: 13px;
   font-size: 1.4em;
@@ -44,6 +49,11 @@
    font-size: 110%;
   }
 
+  .edit-link {
+    padding-bottom: 60px;
+    color: black;
+  }
+
   .login-link {
    color: #474747;
   }
@@ -53,6 +63,7 @@
     font-weight: bold;
     padding-top: 30px;
   }
+
 
   .greeting {
     padding-top: 15px;

@@ -2,6 +2,7 @@
   color: #333333;
   background-color: #1eccbe;
   height: 800px;
+  margin-top: 0px;
 }
 
 .user-info-table {
@@ -23,10 +24,11 @@
 
 .page-header {
   font-size: 29px;
-  margin: .5em 0;
   color: #333333;
   font-weight: 300;
   text-align: center;
   background-size: cover;
+  margin-top: 0px !important;
 
+  margin-bottom: 0px !important;
 }
