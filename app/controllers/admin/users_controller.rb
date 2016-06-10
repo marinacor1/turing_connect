@@ -5,8 +5,7 @@ class Admin::UsersController < Admin::BaseController
   end
 
   def index
-    @users = User.all.compact
-    binding.pry
+    @users = User.all
   end
 
 end

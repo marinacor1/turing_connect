@@ -17,6 +17,9 @@ gem "geocoder"
 gem 'rails_12factor', group: :production
 gem 'unicorn'
 
+group :test do
+  gem 'database_cleaner'
+end
 group :development, :test do
   gem 'byebug'
   gem 'shoulda-matchers', github: 'thoughtbot/shoulda-matchers'
