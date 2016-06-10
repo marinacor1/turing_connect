@@ -45,11 +45,7 @@ html, body {
   display: none;
 }
 
-.user-dashboard {
-  color: #333333;
-  background-color: #1eccbe;
-  height: 800px;
-}
+
 
 .users-index-page {
   padding-left: 60px;
@@ -60,17 +56,10 @@ html, body {
   padding-bottom: 70px;
 }
 
-.user-image {
-  background-color: #1eccbe;
-}
 .welcome {
   font-size: 200%;
 }
 
-.user-info-table {
-  padding: 50px;
-  padding-right: 200px;
-}
 .page-header {
   font-size: 29px;
   margin: .5em 0;
@@ -90,9 +79,6 @@ html, body {
   height: 1000px;
 }
 
-.user-label {
-  font-weight: 300;
-}
 
 .cohort-drop-down {
   padding-right: 700px;
