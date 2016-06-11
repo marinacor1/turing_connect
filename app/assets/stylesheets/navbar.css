@@ -50,7 +50,7 @@
   }
 
   .edit-link {
-    padding-bottom: 60px;
+    padding-bottom: 0px;
     color: black;
   }
 
@@ -63,11 +63,11 @@
     font-weight: bold;
     padding-top: 30px;
   }
+  .nav > .greeting {
+    position: absolute;
+    top: 0px;
+    right: 0px;
 
-
-  .greeting {
-    padding-top: 15px;
-    padding-left: 520px;
   }
 
   .edit-links-bottom {

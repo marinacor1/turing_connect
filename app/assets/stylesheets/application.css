@@ -29,7 +29,7 @@ html, body {
 }
 
 .nav>li>a {
-  display: none;
+  /*display: none;*/
 }
 
 .users-index-page {
