@@ -2,7 +2,7 @@ class GithubService
 
   def initialize(user)
     @user = user
-    @connection = Faraday.new(url:"https://api.github.com")
+    @connection = Faraday.new(url:"https://api.github.com/")
     @connection.headers[:Authorization] = "token #{@user['oauth_token']}"
   end
 
@@ -15,7 +15,8 @@ class GithubService
   end
 
   def get_following_feed
-    @connection.get "/users/#{@user["screen_name"]}/received_events"
+    @connection.get "users/#{@user["screen_name"]}/received_events"
+    binding.pry
   end
 
   def events_array

@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   def self.from_omniauth(auth_info)
     new_user = User.find_by(github_id: auth_info.extra.raw_info.id)
-    attributes = {image: auth_info.info.image, oauth_token: auth_info.credentials.token, first_login: false}
+    attributes = {image: auth_info.info.image, oauth_token: auth_info.credentials.token, screen_name: auth_info.info.nickname, first_login: false}
     new_user.update_attributes(attributes)
     return new_user
   end
