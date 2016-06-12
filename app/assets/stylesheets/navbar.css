@@ -36,6 +36,8 @@
   overflow: auto;
   color: black;
   font-size: 90%;
+  padding-bottom: 0px;
+
  }
 
  .login-with-github {
@@ -47,6 +49,7 @@
    overflow: auto;
    color: black;
    font-size: 110%;
+   padding-bottom: 0px;
   }
 
   .edit-link {
@@ -66,7 +69,7 @@
   .nav > .greeting {
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: 30px;
 
   }
 

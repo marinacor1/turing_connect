@@ -40,7 +40,11 @@
         <%= link_to "Logout", logout_path, method: :delete %>
       </li>
       <li class="greeting">
-        Hello, <%=current_user.name  %>
+        <% if current_user.admin? %>
+          Hello, Admin
+        <% else %>
+          Hello, <%=current_user.name  %>
+        <% end %>
       </li>
       <% else %>
         <li class="login-with-github">
