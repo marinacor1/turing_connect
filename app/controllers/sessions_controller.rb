@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
         redirect_to edit_user_path(user)
       else user.first_login == false && User.from_omniauth(request.env["omniauth.auth"]) #if been here before
         session[:user_id] = user.id
-        redirect_to user
+        redirect_to newsfeed_path
       end
     else
       render file: 'public/404', status: 404 #if doesn't match database
