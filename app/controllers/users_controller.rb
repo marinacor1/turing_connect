@@ -6,9 +6,7 @@ class UsersController < ApplicationController
     @hash = Gmaps4rails.build_markers(@users) do |user, marker|
       marker.lat user.latitude
       marker.lng user.longitude
-      marker.infowindow user.current_employer
-      marker.infowindow user.image
-      marker.infowindow user.name
+      marker.infowindow "#{user.name}, #{user.current_employer}, #{user.cohort}"
       marker.picture({"url" => "https://maps.gstatic.com/mapfiles/ms2/micons/blue.png", "width" => 32, "height" => 32})
       marker.json({name: user.name})
     end
