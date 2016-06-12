@@ -16,7 +16,6 @@ class GithubService
 
   def get_following_feed
     @connection.get "users/#{@user["screen_name"]}/received_events"
-    binding.pry
   end
 
   def events_array

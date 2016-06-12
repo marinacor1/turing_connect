@@ -24,6 +24,7 @@ module FeatureHelper
         token: ENV["github_token"]
       },
           info: {
+            nickname: "marinacor1",
             image: "https://avatars.githubusercontent.com/u/14285122?v=3"
           }
       })

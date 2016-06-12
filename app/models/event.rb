@@ -2,7 +2,7 @@ class Event
   attr_reader :service
 
   def initialize(user)
-    @service ||= GithubService.new
+    @service ||= GithubService.new(user)
   end
 
   def type_change(type)
@@ -18,7 +18,9 @@ class Event
 
   def all
     temp_events = service.events_array
-    binding.pry
+    temp_events.each do |event|
+      {person: event[:actor][:login], type: event[:type], repo: event[:repo][:name]}
+     end
   end
 
 

@@ -1,0 +1,6 @@
+<h3>Welcome to your Newsfeed</h3>
+<ul><% @events.each do |event| %></ul>
+  <li><% event[:person]  %></li>
+  <li><% event[:type] %></li>
+  <li><% event[:repo] %></li>
+<% end %>
