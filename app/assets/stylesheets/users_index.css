@@ -1,0 +1,11 @@
+.index-title {
+  size: 400px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.users-index-page {
+  padding-left: 60px;
+  background-color: #1eccbe;
+  font-family: 'Raleway', Arial, sans-serif;
+}

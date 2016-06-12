@@ -1,7 +1,9 @@
 <div="container">
 <div class="col md- 4 card">
   <div class="users-index-page">
-    <h2>Edit Alumni</h2>
+    <div class="index-title">
+      Alumni List
+    </div>
     <table class="table">
       <thead class="thead-inverse">
         <tr>
@@ -9,6 +11,7 @@
           <th>Cohort</th>
           <th>Name</th>
           <th>Employer</th>
+          <th>City</th>
           <th>State</th>
           <th>Update Account</th>
         </tr>
@@ -20,6 +23,7 @@
             <td><%= user.cohort %></td>
             <td><%= user.name %></td>
             <td><%= user.current_employer %></td>
+            <td><%= user.city %></td>
             <td><%= user.state %></td>
             <td><%= link_to "Update #{user.name}'s Account", edit_user_path(user) %></td>
         </tr>
