@@ -30,9 +30,15 @@
       <li class="eraser">
         <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
       </li>
+      <% if current_user.admin? %>
       <li class= "edit-link">
-        <a href="/users/<%= current_user.id %>/edit">Edit Account</a>
+        <a href="/admin/users/">Edit Accounts</a>
       </li>
+      <% else %>
+      <li class= "edit-link">
+        <a href="/users/<%= current_user.id %>/edit">Edit User Accounts</a>
+      </li>
+      <% end %>
       <li class="remove">
         <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
       </li>
