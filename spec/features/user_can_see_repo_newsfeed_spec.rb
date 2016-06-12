@@ -10,7 +10,8 @@ RSpec.feature "user can see repo newsfeed" do
     click_on "Newsfeed"
 
     expect(current_path).to eq newsfeed_path
+    save_and_open_page
+    
     expect(page).to have_content "Welcome to your Newsfeed"
-
   end
 end

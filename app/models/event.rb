@@ -18,8 +18,8 @@ class Event
 
   def all
     temp_events = service.events_array
-    temp_events.each do |event|
-      {person: event[:actor][:login], type: event[:type], repo: event[:repo][:name]}
+    temp_events.map do |event|
+      {person: event[:actor][:login], type: type_change(event[:type]), repo: event[:repo][:name]}
      end
   end
 
