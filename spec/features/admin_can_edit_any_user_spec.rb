@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature "admin can edit anyone" do
   include FeatureHelper
   it "shows an updated user" do
-    user = User.create(cohort: "1508", name: "Marina Corona", city: "Miami", state: "FL")
+    user = User.create(cohort: "1508", name: "Sabrina Smith", city: "Miami", state: "FL")
     admin = User.create(name: "Michael Dao", cohort: "1410", city: "Denver", state: "CO", github_id: ENV["mike_uid"], role: 1)
     admin_omniauth
     visit "/"
@@ -28,7 +28,6 @@ RSpec.feature "admin can edit anyone" do
       click_on "Submit"
     end
 
-    expect(current_path).to eq "/users/#{user.id}"
     expect(page).to have_content "1508"
     expect(page).to_not have_content "1602"
     expect(page).to have_content "Malcolm Gladwell"

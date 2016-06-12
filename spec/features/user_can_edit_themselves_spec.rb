@@ -6,10 +6,7 @@ RSpec.feature "user can edit themselves" do
     user = User.create(cohort: "1602", name: "Marina Corona", city: "Dallas", state: "TX", github_id: ENV["github_uid"])
     user2 = User.create(cohort: "1508", name: "Tina Turner", city: "Denver", state: "CO", github_id: ENV["github_uid"])
 
-    stub_omniauth
-    visit "/"
-
-    click_on "Sign in with Github"
+    user_login
 
     expect(current_path).to eq(edit_user_path(user))
     within(".edit-user-form") do

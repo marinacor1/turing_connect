@@ -1,4 +1,13 @@
 module FeatureHelper
+
+  def user_login
+
+    stub_omniauth
+    visit '/'
+
+    click_on "Sign in with Github"
+  end
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({

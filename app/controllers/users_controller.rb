@@ -7,6 +7,8 @@ class UsersController < ApplicationController
       marker.lat user.latitude
       marker.lng user.longitude
       marker.infowindow user.current_employer
+      marker.infowindow user.image
+      marker.infowindow user.name
       marker.picture({"url" => "https://maps.gstatic.com/mapfiles/ms2/micons/blue.png", "width" => 32, "height" => 32})
       marker.json({name: user.name})
     end
@@ -27,7 +29,7 @@ class UsersController < ApplicationController
       else
         flash[:error] = "Your account could not be updated. Please check your input and try again."
       end
-        redirect_to user_path(@user)
+    redirect_to user_path(@user)
   end
 
   private
