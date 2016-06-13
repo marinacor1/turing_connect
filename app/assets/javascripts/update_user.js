@@ -2,6 +2,10 @@ $(document).ready(function(){
   editName();
   editEmployer();
   editStreetAddress();
+  editCity();
+  editState();
+  editEmail();
+  editStatus();
 });
 
 function editName() {
@@ -37,6 +41,50 @@ function editStreetAddress() {
   })
 }
 
+function editCity() {
+  $(".user-dashboard-info").on('click', '.user-detail-city', function(){
+    $(this).attr('contentEditable', 'true');
+    $(this).on('blur keydown', function(event){
+      if (event.type=== "blur" || event.keyCode === 13) {
+      editContent(this, {city: $(this).text()})
+    }
+    })
+  })
+}
+
+function editState() {
+  $(".user-dashboard-info").on('click', '.user-detail-state', function(){
+    $(this).attr('contentEditable', 'true');
+    $(this).on('blur keydown', function(event){
+      if (event.type=== "blur" || event.keyCode === 13) {
+      editContent(this, {state: $(this).text()})
+    }
+    })
+  })
+}
+
+function editEmail() {
+  $(".user-dashboard-info").on('click', '.user-detail-email', function(){
+    $(this).attr('contentEditable', 'true');
+    $(this).on('blur keydown', function(event){
+      if (event.type=== "blur" || event.keyCode === 13) {
+      editContent(this, {email: $(this).text()})
+    }
+    })
+  })
+}
+
+function editStatus() {
+  $(".user-dashboard-info").on('click', '.user-detail-status', function(){
+    $(this).attr('contentEditable', 'true');
+    $(this).on('blur keydown', function(event){
+      if (event.type=== "blur" || event.keyCode === 13) {
+      editContent(this, {status: $(this).text()})
+    }
+    })
+  })
+}
+
 function editContent(elementHTML, updatedContent ){
   $.ajax({
     type: "PATCH",
@@ -45,7 +93,11 @@ function editContent(elementHTML, updatedContent ){
       user: {
         name: updatedContent.name,
         current_employer: updatedContent.current_employer,
-        street_address: updatedContent.street_address
+        street_address: updatedContent.street_address,
+        city: updatedContent.city,
+        state: updatedContent.state,
+        email: updatedContent.email,
+        status: updatedContent.status
       }
     },
     dataType: "json",
