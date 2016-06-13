@@ -42,7 +42,10 @@ class User < ActiveRecord::Base
   end
 
   def update_newsfeed(params)
-    Newsfeed.new(params)
+    user = user_information(params['id'])
+    cohort = params['user']['cohort']
+    action = filter_action(params['user'])
+    Newsfeed.create(user: user, cohort: cohort, action: action)
   end
 
 

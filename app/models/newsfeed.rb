@@ -1,4 +1,4 @@
-class Newsfeed
+class Newsfeed < ActiveRecord::Base
 
   def initialize(params)
     user = user_information(params['id'])
@@ -33,4 +33,5 @@ class Newsfeed
   def print_newsfeed(user, cohort, action)
     @statement = "#{user} in cohort #{cohort} #{action}"
   end
+
 end
