@@ -41,5 +41,9 @@ class User < ActiveRecord::Base
     return all_cohorts.uniq.compact.sort
   end
 
+  def update_newsfeed(params)
+    Newsfeed.new(params)
+  end
+
 
 end
