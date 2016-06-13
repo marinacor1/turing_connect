@@ -21,7 +21,9 @@ html, body {
 
  a:visited {color:#333333;}
 
-
+.alumni-map {
+  padding-left: 20px;
+}
 .fa {
   font-family: 'Josefin Sans', Arial, sans-serif;
   color: #474747;
