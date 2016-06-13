@@ -9,24 +9,24 @@
 
 .user-shadow {
   padding-top: 13px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .remove {
-  padding-top: 13px;
-  font-size: 1.4em;
+  padding-top: 16px;
+  font-size: 1.2em;
 }
 
 .map-marker {
   padding-top: 13px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
-.newsfeed-link {
+.newsfeed-list {
   padding-top: 13px;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
-.eraser {
+.cog {
   padding-top: 13px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .login-icon {
