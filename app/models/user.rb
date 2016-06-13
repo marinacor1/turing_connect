@@ -50,21 +50,17 @@ class User < ActiveRecord::Base
   end
 
   def filter_action(params)
-    if params['cohort'].length > 0
+    if params['status'].length > 0
+      focus = params['status']
+      "updated their status: #{focus}."
+    elsif params['cohort'].length > 0
       "updated cohort."
-    elsif params['name'].length > 0
-      "updated name."
     elsif params['current_employer'].length > 0
       "updated employer."
-    elsif params['street_address'].length > 0
-      "updated street address."
     elsif params['city'].length > 0 || params['state'].length > 0
       "updated location."
     elsif params['email'].length > 0
       "updated email address."
-    elsif params['status'].length > 0
-      focus = params['status']
-      "updated their status: #{focus}."
     end
   end
 

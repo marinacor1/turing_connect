@@ -23,6 +23,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
       if @user.update_attributes(user_params)
+        #TODO currently passes in a bunch of information, need to pass in just what has changed.
         @user.update_newsfeed(params)
         flash[:error] = "Success! Your account updated."
       else
@@ -34,6 +35,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:cohort, :name, :current_employer, :street_address, :city, :state, :email)
+    params.require(:user).permit(:status, :cohort, :name, :current_employer, :street_address, :city, :state, :email)
   end
 end
