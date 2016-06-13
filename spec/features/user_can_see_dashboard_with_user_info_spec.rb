@@ -11,7 +11,9 @@ RSpec.feature "user can see dashboard with user info" do
 
     click_on "Sign in with Github"
 
-    expect(current_path).to eq user_path(user)
+    expect(current_path).to eq newsfeed_path
+
+    visit user_path(user)
 
     expect(page.status_code).to eq(200)
     expect(page).to have_content "Hello, Marina Corona"

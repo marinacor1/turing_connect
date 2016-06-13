@@ -17,7 +17,7 @@ RSpec.feature "user who has logged in before sees dashboard after signing in" do
 
     click_on "Sign in with Github"
 
-    expect(current_path).to eq(user_path(user))
+    expect(current_path).to eq(newsfeed_path)
 
     expect(user.first_login).to eq(false)
   end
