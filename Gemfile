@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
+gem 'will_paginate', '~> 3.1'
 gem 'country_state_select'
 gem 'pg', '~> 0.15'
 gem 'figaro'
