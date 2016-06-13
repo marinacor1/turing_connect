@@ -6,8 +6,16 @@
 }
 
 .user-info-table {
-  padding: 50px;
-  padding-right: 200px;
+  margin: 0 auto;
+  width: 800px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px 3px #d3d3d3;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-collapse: separate;
+  border-spacing: 10px 50px;
+}
+.td {
+  padding: 10px;
 }
 
 .user-label {
