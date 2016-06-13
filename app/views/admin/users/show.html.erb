@@ -12,11 +12,17 @@
       <strong><p class="user-label">Current Employer</p></strong>
       <p class="user-detail-employer"><%= @user.current_employer %></p>
       <strong><p class="user-label">Cohort</p></strong>
-      <p class="user-detail"> <%= @user.cohort %></p>
-      <strong><p class="user-label">Location</p></strong>
-      <p class="user-detail"><%= @user.full_street_address %></p>
+      <p class="user-detail-cohort"> <%= @user.cohort %></p>
+      <strong><p class="user-label">Street Address</p></strong>
+      <p class="user-detail-address"><%= @user.street_address %></p>
+      <strong><p class="user-label">City</p></strong>
+      <p class="user-detail-city"><%= @user.city %></p>
+      <strong><p class="user-label">State</p></strong>
+      <p class="user-detail-state"><%= @user.state %></p>
       <strong><p class="user-label">Email</p></strong>
-      <p class="user-detail"><%= @user.email %></p>
+      <p class="user-detail-email"><%= @user.email %></p>
+      <strong><p class="user-label">Status</p></strong>
+      <p class="user-detail-status"><%= @user.status %></p>
       </div>
     </td>
   </tr>

@@ -1,6 +1,7 @@
 $(document).ready(function(){
   editName();
   editEmployer();
+  editStreetAddress();
 });
 
 function editName() {
