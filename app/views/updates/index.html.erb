@@ -1,8 +1,10 @@
 <div class="updates">
   <h1>Updates around the Turing Community</h1>
-  <% @updates.each do |update| %>
-    <% update.action.split(",").each do |action| %>
-      <p><%= link_to update.user.name, user_path(update.user) %> in  <%= update.cohort %> <%= action.delete("[,],\"") %></p>
-      <% end %>
-  <% end %>
+  <div class="each-update">
+    <% @updates.each do |update| %>
+      <% update.action.split(",").each do |action| %>
+        <p><%= link_to update.user.name, user_path(update.user) %> in  <%= update.cohort %> <%= action.delete("[,],\"") %></p>
+        <% end %>
+    <% end %>
+  </div>
 </div>

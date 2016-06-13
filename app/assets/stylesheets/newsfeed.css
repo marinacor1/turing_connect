@@ -9,3 +9,16 @@
   background-color: #1ecccc;
   padding-left: 30px;
 }
+
+.updates{
+  text-align: center;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+.each-update {
+  width: 80%;
+  margin: 1px 1px 1px 1px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 30px #696969;
+  background-color: white;
+}
