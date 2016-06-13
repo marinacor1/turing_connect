@@ -26,6 +26,17 @@ function editEmployer() {
   })
 }
 
+function editStreetAddress() {
+  $(".user-dashboard-info").on('click', '.user-detail-address', function(){
+    $(this).attr('contentEditable', 'true');
+    $(this).on('blur keydown', function(event){
+      if (event.type=== "blur" || event.keyCode === 13) {
+      editContent(this, {street_address: $(this).text()})
+    }
+    })
+  })
+}
+
 function editContent(elementHTML, updatedContent ){
   $.ajax({
     type: "PATCH",
@@ -33,7 +44,8 @@ function editContent(elementHTML, updatedContent ){
     data: {
       user: {
         name: updatedContent.name,
-        current_employer: updatedContent.current_employer
+        current_employer: updatedContent.current_employer,
+        street_address: updatedContent.street_address
       }
     },
     dataType: "json",
