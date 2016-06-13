@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :updates
   geocoded_by :full_street_address
   after_validation :geocode #runs everytime a model is validated
   enum role: %w(default admin)
@@ -40,6 +41,29 @@ class User < ActiveRecord::Base
     end
     return all_cohorts.uniq.compact.sort
   end
+
+  def update_newsfeed(params)
+    user = User.find(params['id'])
+    cohort = params['user']['cohort']
+    action = filter_action(params['user'])
+    Update.create(user: user, cohort: cohort, action: action)
+  end
+
+  def filter_action(params)
+    if params['status'].length > 0
+      focus = params['status']
+      "updated their status: #{focus}"
+    elsif params['cohort'].length > 0
+      "updated cohort."
+    elsif params['current_employer'].length > 0
+      "updated employer."
+    elsif params['city'].length > 0 || params['state'].length > 0
+      "updated location."
+    elsif params['email'].length > 0
+      "updated email address."
+    end
+  end
+
 
 
 end

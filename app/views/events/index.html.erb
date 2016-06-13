@@ -1,5 +1,5 @@
   <div class = "newsfeed">
-  <p class="newsfeed-title">Welcome to your Newsfeed</p>
+  <p class="newsfeed-title">Welcome to your Github Newsfeed</p>
   <ul><% @events.each do |event| %>
     <li><%= event[:person] %> <%= event[:type] %> <%= event[:repo] %></li>
   <% end %>

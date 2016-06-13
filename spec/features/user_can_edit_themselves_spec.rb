@@ -16,7 +16,6 @@ RSpec.feature "user can edit themselves" do
       fill_in "Street Address", with: "1510 Blake Street"
       fill_in "City", with: "Denver"
       select("CO", from: "State")
-      fill_in "Email", with: "email@email.com"
       click_on "Submit"
     end
 
@@ -28,7 +27,6 @@ RSpec.feature "user can edit themselves" do
     expect(page).to have_content "Denny's"
     expect(page).to have_content "1510 Blake Street"
     expect(page).to have_content "Denver, CO"
-    expect(page).to have_content "email@email.com"
 
   end
 end
