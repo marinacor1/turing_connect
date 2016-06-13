@@ -46,14 +46,13 @@ class User < ActiveRecord::Base
     user = User.find(params['id'])
     cohort = params['user']['cohort']
     action = filter_action(params['user'])
-    binding.pry
     Update.create(user: user, cohort: cohort, action: action)
   end
 
   def filter_action(params)
     if params['status'].length > 0
       focus = params['status']
-      "updated their status: #{focus}."
+      "updated their status: #{focus}"
     elsif params['cohort'].length > 0
       "updated cohort."
     elsif params['current_employer'].length > 0

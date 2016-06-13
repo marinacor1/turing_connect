@@ -13,6 +13,7 @@ RSpec.feature "when user updates newsfeed" do
     end
 
     visit '/newsfeed'
-    expect(page).to have_content "Marina updated their status: Looking for a job in NYC!"
+    save_and_open_page
+    expect(page).to have_content "Marina Corona in 1602 updated their status: Looking for a job in NYC!"
   end
 end
