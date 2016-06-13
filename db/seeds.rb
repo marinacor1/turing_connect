@@ -4,6 +4,8 @@ class Seed
     # create_states
     create_cohorts
     create_admin
+    add_1602
+    add_1511
   end
 
   # def create_states
@@ -29,6 +31,14 @@ class Seed
       marina.update({role: 1, oauth_token: ENV["oath_token"]})
       marina.save
     puts "Admin created"
+  end
+
+  def add_1602
+    User.create(github_id: '11367377', city: "Denver", state: "Co") #sunny
+  end
+
+  def add_1511
+
   end
 end
 
