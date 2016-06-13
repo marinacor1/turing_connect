@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: 'welcome#show'
   get '/users/map', to: 'users#index'
-  get '/newsfeed', to: 'events#index', as: :newsfeed
+  get '/g_newsfeed', to: 'events#index', as: :newsfeed
   resources :users, only: [:show, :edit, :update]
 
   get "/auth/github", as: :github_login

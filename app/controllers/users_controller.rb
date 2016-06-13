@@ -23,6 +23,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
       if @user.update_attributes(user_params)
+        Newsfeed.new(user_params)
         flash[:error] = "Success! Your account updated."
       else
         flash[:error] = "Your account could not be updated. Please check your input and try again."
