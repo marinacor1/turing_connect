@@ -34,11 +34,11 @@ class Seed
   end
 
   def add_1602
-    User.create(github_id: '11367377', city: "Denver", state: "Co") #sunny
+    User.create(github_id: '11367377', city: "Denver", state: "C)") #sunny
   end
 
   def add_1511
-
+   User.create(github_id: '13855453', city: "Denver", state: "CO") #nick
   end
 end
 
