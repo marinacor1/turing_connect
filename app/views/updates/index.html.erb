@@ -1,0 +1,6 @@
+<div class="updates">
+  <h1>Updates around the Turing Community</h1>
+  <% @updates.each do |update| %>
+  <p><%= update.user.name %> in  <%= update.cohort %> <%= update.action %></p>
+  <% end %>
+</div>
