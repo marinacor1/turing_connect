@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+
   geocoded_by :full_street_address
   after_validation :geocode #runs everytime a model is validated
   enum role: %w(default admin)
@@ -42,11 +43,31 @@ class User < ActiveRecord::Base
   end
 
   def update_newsfeed(params)
-    user = user_information(params['id'])
+    user = User.find(params['id']).name
     cohort = params['user']['cohort']
     action = filter_action(params['user'])
     Newsfeed.create(user: user, cohort: cohort, action: action)
   end
+
+  def filter_action(params)
+    if params['cohort'].length > 0
+      "updated cohort."
+    elsif params['name'].length > 0
+      "updated name."
+    elsif params['current_employer'].length > 0
+      "updated employer."
+    elsif params['street_address'].length > 0
+      "updated street address."
+    elsif params['city'].length > 0 || params['state'].length > 0
+      "updated location."
+    elsif params['email'].length > 0
+      "updated email address."
+    elsif params['status'].length > 0
+      focus = params['status']
+      "updated their status: #{focus}."
+    end
+  end
+
 
 
 end

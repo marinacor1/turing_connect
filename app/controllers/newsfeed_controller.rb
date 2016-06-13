@@ -1,5 +1,5 @@
 class NewsfeedController < ApplicationController
   def index
-    @newsfeeds = Newsfeed.all
+    @feeds = Newsfeed.all
   end
 end

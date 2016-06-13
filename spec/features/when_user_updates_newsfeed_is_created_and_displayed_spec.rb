@@ -9,10 +9,11 @@ RSpec.feature "when user updates newsfeed" do
     expect(current_path).to eq(edit_user_path(user))
     within(".edit-user-form") do
       fill_in "Current Focus:", with: "Looking for a job in NYC!"
+      click_on "Submit"
     end
 
     visit '/newsfeed'
-
+save_and_open_page
     expect(page).to have_content "Marina updated their status: Looking for a job in NYC!"
   end
 end
