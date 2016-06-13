@@ -1,12 +1,8 @@
-.navbar-brand {
-  font-family: Noto Sans, arial;
- }
-
  .navbar.navbar-default {
    padding-top: 10px;
    margin-bottom: 0px !important;
  }
-
+ 
 .user-shadow {
   padding-top: 13px;
   font-size: 1.2em;
@@ -16,14 +12,15 @@
   font-size: 1.2em;
 }
 
+.newsfeed-list {
+  padding-top: 16px;
+}
+
 .map-marker {
   padding-top: 13px;
   font-size: 1.2em;
 }
-.newsfeed-list {
-  padding-top: 13px;
-  font-size: 1.1em;
-}
+
 .cog {
   padding-top: 13px;
   font-size: 1.2em;
@@ -35,40 +32,12 @@
   font-size: 1.6em;
 }
 
- .logout-link {
-  float: left;
-  overflow: auto;
-  color: black;
-  font-size: 90%;
-  padding-bottom: 0px;
-
- }
-
- .login-with-github {
+.login-with-github {
    padding-left: 800px;
  }
 
-  .map-link {
-   float: left;
-   overflow: auto;
-   color: black;
-   font-size: 110%;
-   padding-bottom: 0px;
-  }
-
-  .edit-link {
-    padding-bottom: 0px;
-    color: black;
-  }
-
   .login-link {
    color: #474747;
-  }
-
-  .navbar-brand {
-    font-size: 130%;
-    font-weight: bold;
-    padding-top: 30px;
   }
 
   .nav > .greeting {

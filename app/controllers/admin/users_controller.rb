@@ -2,6 +2,7 @@ class Admin::UsersController < Admin::BaseController
 
   def show
     @user = current_user
+    @id = current_user.id
   end
 
   def index

@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: {format: :json} do
     namespace :v1 do
       get 'users', to: 'users#index'
-      get 'search'
+      resources :users, only: [:edit, :update]
     end
   end
 

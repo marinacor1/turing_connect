@@ -7,19 +7,19 @@
   <tr>
     <td><%= image_tag(@user.image, width: "250", height: "250") %></td>
     <td>
-      <div class="user-dashboard-info">
+      <div class="user-dashboard-info" id ="<% @user.id%>">
       <strong><p class="user-label">Name</p></strong>
-      <p class="user-detail"><%= @user.name %></p>
+      <p class="user-detail-name" id="name"><%= @user.name %></p>
       <strong><p class="user-label">Current Employer</p></strong>
-      <p class="user-detail"><%= @user.current_employer %></p>
+      <p class="user-detail-employer"><%= @user.current_employer %></p>
       <strong><p class="user-label">Cohort</p></strong>
-      <p class="user-detail"> <%= @user.cohort %></p>
+      <p class="user-detail-cohort"> <%= @user.cohort %></p>
       <strong><p class="user-label">Location</p></strong>
-      <p class="user-detail"><%= @user.full_street_address %></p>
+      <p class="user-detail-street"><%= @user.full_street_address %></p>
       <strong><p class="user-label">Email</p></strong>
-      <p class="user-detail"><%= @user.email %></p>
+      <p class="user-detail-email"><%= @user.email %></p>
       <strong><p class="user-label">Current Focus:</p></strong>
-      <p class="user-detail"><%= @user.status %></p>
+      <p class="user-detail-status"><%= @user.status %></p>
       </div>
     </td>
   </tr>
