@@ -3,3 +3,12 @@ Turing - Connect
 This app will connect current Turing students and staff to alumni.  Additionally, it will provide information about alumni locations and companies.
 
 OAuth will be through Github and provide different information depending on registration.
+
+In order to use this app:
+1. Clone repo.
+2. Bundle
+3. Replace my github/ google maps javascript keys  with your own
+4. rake db:create db:migrate
+5. rake geocode:all CLASS=User SLEEP=0.25 BATCH=100
+6. bundle exec rake import
+7. rake db:seed

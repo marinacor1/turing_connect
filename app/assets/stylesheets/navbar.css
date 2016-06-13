@@ -20,6 +20,10 @@
   padding-top: 13px;
   font-size: 1.4em;
 }
+.newsfeed-link {
+  padding-top: 13px;
+  font-size: 1.4em;
+}
 .eraser {
   padding-top: 13px;
   font-size: 1.4em;
@@ -66,11 +70,11 @@
     font-weight: bold;
     padding-top: 30px;
   }
+
   .nav > .greeting {
     position: absolute;
     top: 0px;
     right: 30px;
-
   }
 
   .edit-links-bottom {
