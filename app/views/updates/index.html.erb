@@ -2,7 +2,7 @@
   <h1>Updates around the Turing Community</h1>
   <% @updates.each do |update| %>
     <% update.action.split(",").each do |action| %>
-      <p><%= update.user.name %> in  <%= update.cohort %> <%= action.delete("[,],\"") %></p>
+      <p><%= link_to update.user.name, user_path(update.user) %> in  <%= update.cohort %> <%= action.delete("[,],\"") %></p>
       <% end %>
   <% end %>
 </div>
