@@ -47,23 +47,29 @@ class User < ActiveRecord::Base
     cohort = params['user']['cohort']
     action = filter_action(params['user'])
     Update.create(user: user, cohort: cohort, action: action)
+    binding.pry
   end
 
   def filter_action(params)
+    updates = []
     if params['status'].length > 0
       focus = params['status']
-      "updated their status: #{focus}"
-    elsif params['cohort'].length > 0
-      "updated cohort."
-    elsif params['current_employer'].length > 0
-      "updated employer."
-    elsif params['city'].length > 0 || params['state'].length > 0
-      "updated location."
-    elsif params['email'].length > 0
-      "updated email address."
+      updates << "updated their status: #{focus}"
     end
+    if params['cohort'].length > 0
+      updates << "updated cohort."
+    end
+    if params['current_employer'].length > 0
+      updates << "updated employer."
+    end
+    if params['city'].length > 0 || params['state'].length > 0
+      updates <<  "updated location."
+    end
+    if params['email'].length > 0
+      updates << "updated email address."
+    end
+    return updates.flatten
   end
-
 
 
 end
