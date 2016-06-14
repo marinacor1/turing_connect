@@ -9,6 +9,6 @@ In order to use this app:
 2. Bundle
 3. Replace my github/ google maps javascript keys  with your own
 4. rake db:create db:migrate
-5. rake geocode:all CLASS=User SLEEP=0.25 BATCH=100
-6. bundle exec rake import
-7. rake db:seed
+5. bundle exec rake import
+6. rake db:seed
+7. rake geocode:all CLASS=User SLEEP=0.25 BATCH=100
