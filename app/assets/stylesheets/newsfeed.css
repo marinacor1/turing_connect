@@ -24,11 +24,11 @@
 }
 
 .each-update {
-  width: 80%;
+  width: 90%;
   height: 50px;
   font-weight: bolder;
-  padding-left: 10px;
-  padding-top: 12px;
+  padding-left: 15px;
+  padding-top: 13px;
   margin: 1px 1px 1px 1px;
   margin-bottom: 23px;
   box-shadow: 1px 1px 9px #dfe121;
