@@ -13,4 +13,14 @@
 .pagination {
   padding-bottom: 12px;
   padding-left: 20px;
+  background-color: #1eccbe;
+
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
