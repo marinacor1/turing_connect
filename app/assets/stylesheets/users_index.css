@@ -11,7 +11,9 @@
 }
 
 .pagination {
-
+  margin: 0px;
+  height: 10px;
+  width: 320px;
 }
 
 a:link {
