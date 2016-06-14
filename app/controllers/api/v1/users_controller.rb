@@ -7,8 +7,15 @@ module Api
       end
 
       def update
-        User.update_newsfeed(params)
-        respond_with User.update(params['id'], user_params)
+        user = User.find(params['id'])
+        if user.update(user_params)
+          respond_with user
+          flash.now[:error] = "Success! Your account updated."
+          User.update_newsfeed(params)
+        else
+          flash.now[:error] = "Your account could not be updated. Please check your input and try again."
+        end
+
       end
 
   private
