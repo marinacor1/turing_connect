@@ -9,7 +9,7 @@ module Api
       def update
         user = User.find(params['id'])
         if user.update(user_params)
-          # User.update_newsfeed(params)
+          User.update_newsfeed(params)
           render json: {response: "successful"}
         else
           render json: {response: "failed"}

@@ -47,7 +47,7 @@ class User < ActiveRecord::Base
     cohort = user.cohort
     action = filter_action(params['user']) + status_check(params)
     action = "*" if action.nil?
-    Update.create(user: user.name, cohort: cohort, action: action)
+    Update.create(user: user, cohort: cohort, action: action)
   end
 
   def self.filter_action(params)
@@ -62,12 +62,12 @@ class User < ActiveRecord::Base
                email: 'updated their contact information.',
     current_employer: 'updated their job.',
                 name: 'updated their name.',
-              status: 'updated their status'}
+              status: 'updated their status: '}
   end
 
   def self.status_check(params)
-    if params.keys.first.include? "status"
-      status = params.values.first
+    if params['user'].keys.first.include? 'status'
+      status = params['user'].values.first
     else
       status = ""
     end
