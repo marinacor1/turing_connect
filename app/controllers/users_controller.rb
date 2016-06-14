@@ -24,6 +24,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
       if @user.update_attributes(user_params)
+        binding.pry
         #TODO currently passes in a bunch of information, need to pass in just what has changed.
         @user.update_newsfeed(params)
         flash[:error] = "Success! Your account updated."

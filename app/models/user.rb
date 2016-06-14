@@ -42,32 +42,36 @@ class User < ActiveRecord::Base
     return all_cohorts.uniq.compact.sort
   end
 
-  def update_newsfeed(params)
+  def self.update_newsfeed(params)
     user = User.find(params['id'])
-    cohort = params['user']['cohort']
-    action = filter_action(params['user'])
-    Update.create(user: user, cohort: cohort, action: action)
+    cohort = user.cohort
+    action = filter_action(params['user']) + status_check(params)
+    action = "*" if action.nil?
+    Update.create(user: user.name, cohort: cohort, action: action)
   end
 
-  def filter_action(params)
-    updates = []
-    if params['status'].length > 0
-      focus = params['status']
-      updates << "updated their status: #{focus}"
+  def self.filter_action(params)
+    symbolized = params.keys.first.to_sym
+    actions[symbolized]
+  end
+
+  def self.actions
+     {street_address: 'updated their street address.',
+                city: 'updated their city.',
+               state: 'updated their state.',
+               email: 'updated their contact information.',
+    current_employer: 'updated their job.',
+                name: 'updated their name.',
+              status: 'updated their status'}
+  end
+
+  def self.status_check(params)
+    if params.keys.first.include? "status"
+      status = params.values.first
+    else
+      status = ""
     end
-    if params['cohort'].length > 0
-      updates << "updated cohort."
-    end
-    if params['current_employer'].length > 0
-      updates << "updated employer."
-    end
-    if params['city'].length > 0 || params['state'].length > 0
-      updates <<  "updated location."
-    end
-    if params['email'].length > 0
-      updates << "updated email address."
-    end
-    return updates.flatten
+    return status
   end
 
 

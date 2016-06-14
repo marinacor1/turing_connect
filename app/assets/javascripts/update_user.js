@@ -9,7 +9,6 @@ $(document).ready(function(){
 });
 
 function editName() {
-  debugger
   $(".user-dashboard-info").on('click', '.user-detail-name', function(){
     $(this).attr('contentEditable', 'true');
     $(this).on('blur keydown', function(event){

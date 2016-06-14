@@ -7,6 +7,7 @@ module Api
       end
 
       def update
+        User.update_newsfeed(params)
         respond_with User.update(params['id'], user_params)
       end
 
