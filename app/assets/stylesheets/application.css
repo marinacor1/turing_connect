@@ -21,8 +21,8 @@ html, body {
 
  a:visited {color:#333333;}
 
-.alumni-map {
-  padding-left: 20px;
+#map {
+  height: 100%;
 }
 .fa {
   font-family: 'Josefin Sans', Arial, sans-serif;
