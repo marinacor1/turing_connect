@@ -40,10 +40,6 @@
       <li class= "edit-link">
         <a href="/admin/users/">Edit Accounts</a>
       </li>
-      <% else %>
-      <li class= "edit-link">
-        <a href="/users/<%= current_user.id %>/edit">Edit Your Account</a>
-      </li>
       <% end %>
       <li class="remove">
         <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
@@ -73,9 +69,9 @@
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
     <ul class="nav navbar-nav">
-      <% if current_user %>
+      <% if current_user  && current_user.admin? == false %>
         <li class="edit-links-bottom">
-          <p>Moving? Have a new job?  <strong><%= link_to "Update Your Account", edit_user_path(current_user) %>   </strong></p>
+          <p>Moving? Have a new job?  <strong><%= link_to "Update Your Account", user_path(current_user) %>   </strong></p>
         </li>
         <li class="update-icon">
           <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
