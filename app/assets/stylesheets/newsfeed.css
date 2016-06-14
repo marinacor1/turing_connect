@@ -6,22 +6,31 @@
 .newsfeed {
   color: #333333;
   font-family: 'Raleway', Arial, sans-serif;
-  background-color: #1ecccc;
   padding-left: 30px;
+  background-color: black;
 }
 
+.updates-header{
+  color: white;
+  font-size: 200%;
+  text-align: center;
+  padding: 15px;
+  font-family: Raleway;
+}
 .updates{
   padding-left: 30px;
   font-family: 'Raleway', Arial, sans-serif;
+  background-color: #42345d;
 }
 
 .each-update {
   width: 80%;
   height: 50px;
+  font-weight: bolder;
   padding-left: 10px;
   padding-top: 12px;
   margin: 1px 1px 1px 1px;
   margin-bottom: 23px;
-  box-shadow: 1px 1px 30px #696969;
+  box-shadow: 1px 1px 30px #564A6E;
   background-color: white;
 }

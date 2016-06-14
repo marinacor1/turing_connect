@@ -1,5 +1,5 @@
 <div class="updates">
-  <h1>Updates around the Turing Community</h1>
+  <p class="updates-header">Updates around the Turing Community</p>
     <% @updates.each do |update| %>
       <% unless update.action.nil? %>
         <p class="animated slideInUp each-update"><%= link_to update.user.name, user_path(update.user) %> in  <%= update.cohort %> <%= update.action.delete("[,],\"") %></p>
