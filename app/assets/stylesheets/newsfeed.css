@@ -16,21 +16,23 @@
   text-align: center;
   padding: 15px;
   font-family: Raleway;
-}
-.updates{
-  padding-left: 30px;
-  font-family: 'Raleway', Arial, sans-serif;
   background-color: #42345d;
 }
+.updates{
+  padding-left: 290px;
+  font-family: 'Raleway', Arial, sans-serif;
+}
 
+.updates-page {
+  background: url("https://images.unsplash.com/uploads/1412273646059cc129bb5/eae0a1da?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a518df16021d3615689f5cff5ee0a879") no-repeat center;
+}
 .each-update {
-  width: 90%;
+  width: 70%;
   height: 50px;
   font-weight: bolder;
   padding-left: 15px;
-  padding-top: 13px;
   margin: 1px 1px 1px 1px;
   margin-bottom: 23px;
-  box-shadow: 1px 1px 9px #dfe121;
+  box-shadow: 1px 1px 9px #ae61c9;
   background-color: white;
 }

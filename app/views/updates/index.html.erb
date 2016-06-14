@@ -1,8 +1,11 @@
-<div class="updates">
+<div class='updates-page'>
   <p class="updates-header">Updates around the Turing Community</p>
-    <% @updates.each do |update| %>
-      <% unless update.action.nil? %>
-        <p class="animated slideInUp each-update"><%= link_to update.user.name, user_path(update.user) %> in  <%= update.cohort %> <%= update.action.delete("[,],\"") %></p>
+  <div class="updates">
+      <% @updates.each do |update| %>
+        <% unless update.action.nil? %>
+          <p class="animated slideInUp each-update"><%= link_to update.user.name, user_path(update.user) %> in  <%= update.cohort %> <%= update.action.delete("[,],\"") %></p>
+        <% end %>
       <% end %>
-    <% end %>
+  </div>
 </div>
+<%= will_paginate @updates %>
