@@ -9,11 +9,10 @@ module Api
       def update
         user = User.find(params['id'])
         if user.update(user_params)
-          respond_with user
-          flash.now[:error] = "Success! Your account updated."
-          User.update_newsfeed(params)
+          # User.update_newsfeed(params)
+          render json: {response: "successful"}
         else
-          flash.now[:error] = "Your account could not be updated. Please check your input and try again."
+          render json: {response: "failed"}
         end
 
       end

@@ -102,7 +102,13 @@ function editContent(elementHTML, updatedContent ){
     },
     dataType: "json",
     success: function(datum) {
-      console.log("Update successful!")
+      $('.user-flash').removeClass('hidden')
+      if (datum['response'] === 'successful') {
+        $('.user-flash').text('Successfully updated!')
+      } else {
+        $('.user-flash').text('Update unsuccessful.')
+
+      }
     }
   })
 }
