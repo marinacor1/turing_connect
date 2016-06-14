@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160613172639) do
+ActiveRecord::Schema.define(version: 20160614021413) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,22 +36,22 @@ ActiveRecord::Schema.define(version: 20160613172639) do
   create_table "users", force: :cascade do |t|
     t.string   "cohort"
     t.string   "name"
-    t.string   "current_employer"
+    t.string   "current_employer", default: "none"
     t.string   "github_id"
     t.string   "street_address"
     t.string   "city"
     t.string   "state"
     t.string   "image"
     t.string   "oauth_token"
-    t.string   "email"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
+    t.string   "email",            default: "none"
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
     t.integer  "role",             default: 0
     t.boolean  "first_login",      default: true
     t.float    "latitude"
     t.float    "longitude"
     t.string   "screen_name"
-    t.string   "status"
+    t.string   "status",           default: "none"
   end
 
   add_foreign_key "updates", "users"
