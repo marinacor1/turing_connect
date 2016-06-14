@@ -10,6 +10,8 @@
   width: 500px;
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.2);
+  font-family: Josefin Sans;
+  font-size: 120%;
 }
 
 .user-label {
@@ -26,12 +28,14 @@
 
 .dashboard-instructions {
   text-align: center;
-  font-size: 150%;
+  font-size: 120%;
+  font-family: monospace;
 }
 
 .header-text {
   padding-top: 25px;
   font-weight: bolder;
+  font-family: Josefin Sans;
 }
 .page-header {
   font-size: 29px;
