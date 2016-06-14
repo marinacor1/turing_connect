@@ -21,6 +21,7 @@ gem 'gmaps4rails'
 
 group :test do
   gem 'database_cleaner'
+  gem 'selenium-webdriver'
 end
 group :development, :test do
   gem 'byebug'

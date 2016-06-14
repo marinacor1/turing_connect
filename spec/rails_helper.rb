@@ -28,4 +28,17 @@ RSpec.configure do |config|
 
   config.filter_rails_from_backtrace!
   # config.extend VCR::RSpec::Macros
+  config.around(:each, js: true) do |example|
+    DatabaseCleaner.strategy = :truncation
+    ActiveRecord::Base.shared_connection = ActiveRecord::Base.connection
+    example.run
+    ActiveRecord::Base.shared_connection = nil
+  end
+end
+class ActiveRecord::Base
+  mattr_accessor :shared_connection
+  @@shared_connection = nil
+  def self.connection
+    @@shared_connection || retrieve_connection
+  end
 end
