@@ -1,27 +1,38 @@
 <div class="user-dashboard">
-  <div class="page-header">User Dashboard</div>
-  <div class="user-image">
-</div>
+  <div class ="hidden user-flash">
+
+  </div>
+  <div class="page-header">
+    <div class='header-text'>
+      User Dashboard
+    </div>
+  </div>
+  <div class="dashboard-instructions">
+    <strong><p>Connect with the Community!</p></strong>
+    To edit your information, click on the field you would like to edit.
+    <p>To save your changes, click outside the highlighted box.</p>
+  </div>
 <div class='user-info-table'>
-<table cellspacing="1" cellpadding="1">
-  <tr>
-    <td><%= image_tag(@user.image, width: "250", height: "250") %></td>
-    <td>
-      <div class="user-dashboard-info" id='<%= @id %>'>
-      <strong><p class="user-label">Name</p></strong>
-      <p class="user-detail-name"><%= @user.name %></p>
-      <strong><p class="user-label">Current Employer</p></strong>
-      <p class="user-detail-employer"><%= @user.current_employer %></p>
-      <strong><p class="user-label">Cohort</p></strong>
-      <p class="user-detail"> <%= @user.cohort %></p>
-      <strong><p class="user-label">Location</p></strong>
-      <p class="user-detail"><%= @user.full_street_address %></p>
-      <strong><p class="user-label">Email</p></strong>
-      <p class="user-detail"><%= @user.email %></p>
-      <strong><p class="user-label">Status</p></strong>
-      <p class="user-detail-status"><%= @user.status %></p>
-      </div>
-    </td>
-  </tr>
-</table>
+  <div class="personal-image">
+    <%= image_tag(@user.image, width: "300", height: "300") %>
+  </div>
+  <div class="user-dashboard-info" id='<%= @id %>'>
+    <strong><p class="user-label">Name</p></strong>
+    <p class="user-detail-name"><%= @user.name %></p>
+    <strong><p class="user-label">Current Employer</p></strong>
+    <p class="user-detail-employer"><%= @user.current_employer %></p>
+    <strong><p class="user-label">Cohort</p></strong>
+    <p class="user-detail-cohort"> <%= @user.cohort %></p>
+    <strong><p class="user-label">Street Address</p></strong>
+    <p class="user-detail-address"><%= @user.street_address %></p>
+    <strong><p class="user-label">City</p></strong>
+    <p class="user-detail-city"><%= @user.city %></p>
+    <strong><p class="user-label">State</p></strong>
+    <p class="user-detail-state"><%= @user.state %></p>
+    <strong><p class="user-label">Email</p></strong>
+    <p class="user-detail-email"><%= @user.email %></p>
+    <strong><p class="user-label">Status</p></strong>
+    <p class="user-detail-status"><%= @user.status %></p>
+  </div>
+
 </div>
