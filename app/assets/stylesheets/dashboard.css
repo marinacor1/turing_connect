@@ -28,12 +28,13 @@
 
 .dashboard-instructions {
   text-align: center;
+  padding-top: 10px;
   font-size: 120%;
   font-family: monospace;
 }
 
 .header-text {
-  padding-top: 25px;
+  padding-top: 20px;
   font-weight: bolder;
   font-family: Josefin Sans;
 }
@@ -41,7 +42,7 @@
   font-size: 29px;
   color: #333333;
   font-weight: 300;
-  height: 100px;
+  height: 80px;
   text-align: center;
   background-size: cover;
   margin-top: 0px !important;
