@@ -9,20 +9,18 @@ $(document).ready(function(){
 });
 
 function editName() {
-  $(".user-dashboard-info").on('click', '.user-detail-name', function(){
-    $(this).attr('contentEditable', 'true');
-    $(this).on('blur keydown', function(event){
+    $(".user-detail-name").on('blur keydown', function(event){
+      event.stopPropagation();
       if (event.type=== "blur" || event.keyCode === 13) {
-      editContent(this, {name: $(this).text()})
-    }
+        editContent(this, {name: $(this).text()})
+      }
     })
-  })
 }
 
 function editEmployer() {
   $(".user-dashboard-info").on('click', '.user-detail-employer', function(){
     $(this).attr('contentEditable', 'true');
-    $(this).on('blur keydown', function(event){
+    $(this).unbind('blur keydown').on('blur keydown', function(event){
       if (event.type=== "blur" || event.keyCode === 13) {
       editContent(this, {current_employer: $(this).text()})
     }
@@ -33,7 +31,7 @@ function editEmployer() {
 function editStreetAddress() {
   $(".user-dashboard-info").on('click', '.user-detail-address', function(){
     $(this).attr('contentEditable', 'true');
-    $(this).on('blur keydown', function(event){
+    $(this).unbind('blur keydown').on('blur keydown', function(event){
       if (event.type=== "blur" || event.keyCode === 13) {
       editContent(this, {street_address: $(this).text()})
     }
@@ -44,7 +42,7 @@ function editStreetAddress() {
 function editCity() {
   $(".user-dashboard-info").on('click', '.user-detail-city', function(){
     $(this).attr('contentEditable', 'true');
-    $(this).on('blur keydown', function(event){
+    $(this).unbind('blur keydown').on('blur keydown', function(event){
       if (event.type=== "blur" || event.keyCode === 13) {
       editContent(this, {city: $(this).text()})
     }
@@ -55,7 +53,7 @@ function editCity() {
 function editState() {
   $(".user-dashboard-info").on('click', '.user-detail-state', function(){
     $(this).attr('contentEditable', 'true');
-    $(this).on('blur keydown', function(event){
+    $(this).unbind('blur keydown').on('blur keydown', function(event){
       if (event.type=== "blur" || event.keyCode === 13) {
       editContent(this, {state: $(this).text()})
     }
@@ -66,7 +64,7 @@ function editState() {
 function editEmail() {
   $(".user-dashboard-info").on('click', '.user-detail-email', function(){
     $(this).attr('contentEditable', 'true');
-    $(this).on('blur keydown', function(event){
+    $(this).unbind('blur keydown').on('blur keydown', function(event){
       if (event.type=== "blur" || event.keyCode === 13) {
       editContent(this, {email: $(this).text()})
     }
@@ -77,7 +75,7 @@ function editEmail() {
 function editStatus() {
   $(".user-dashboard-info").on('click', '.user-detail-status', function(){
     $(this).attr('contentEditable', 'true');
-    $(this).on('blur keydown', function(event){
+    $(this).unbind('blur keydown').on('blur keydown', function(event){
       if (event.type=== "blur" || event.keyCode === 13) {
       editContent(this, {status: $(this).text()})
     }

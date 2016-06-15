@@ -25,7 +25,7 @@
 }
 
 .updates-page {
-  background: url("https://images.unsplash.com/uploads/1412273646059cc129bb5/eae0a1da?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a518df16021d3615689f5cff5ee0a879") no-repeat center;
+  background: url(dark_embroidery.png);
   min-height: 100vh;
 }
 .each-update {
@@ -36,7 +36,7 @@
   padding-left: 15px;
   margin: 1px 1px 1px 1px;
   margin-bottom: 23px;
-  box-shadow: 2px 2px 9px #ae61c9;
+  box-shadow: 2px 2px 2px #ae61c9;
   background-color: white;
 }
 
