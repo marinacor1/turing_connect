@@ -11,6 +11,6 @@ RSpec.feature "user can see repo newsfeed" do
 
     expect(current_path).to eq g_newsfeed_path
 
-    expect(page).to have_content "Welcome to your Newsfeed"
+    expect(page).to have_content "Welcome to your Github Newsfeed"
   end
 end
