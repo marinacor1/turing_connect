@@ -36,3 +36,7 @@
   box-shadow: 2px 2px 9px #ae61c9;
   background-color: white;
 }
+
+.updates-paginate {
+  height: 20px;
+}

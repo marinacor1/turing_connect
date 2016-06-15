@@ -1,6 +1,6 @@
 .user-dashboard {
   color: #333333;
-  background-color: #6c9df4;
+  background-color: #7cd1ea;
   height: 800px;
   margin-top: 0px;
 }
@@ -35,8 +35,9 @@
 
 .header-text {
   padding-top: 20px;
-  font-weight: bolder;
-  font-family: Josefin Sans;
+  font-weight: bold;
+  font-family: monospace;
+
 }
 .page-header {
   font-size: 29px;
