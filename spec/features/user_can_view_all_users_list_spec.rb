@@ -11,7 +11,6 @@ RSpec.feature "user can view all users list" do
 
     expect(current_path).to eq '/students'
 
-
-    expect(page).to have_content "All Alumni"
+    expect(page).to have_content "Alumni List"
   end
 end

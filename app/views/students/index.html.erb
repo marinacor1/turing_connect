@@ -1,5 +1,5 @@
     <div class="index-title">
-      Alumni Edit List
+      Alumni List
     </div>
 <div="container">
 <div class="col md- 4 card">
@@ -13,7 +13,6 @@
           <th>Employer</th>
           <th>City</th>
           <th>State</th>
-          <th>Update Account</th>
         </tr>
       </thead>
       <tbody>
@@ -21,11 +20,10 @@
           <% @users.each_with_index do |user, index| %>
             <td><%= index + 1 %></td>
             <td><%= user.cohort %></td>
-            <td><%= user.name %></td>
+            <td><%= link_to user.name, user_path(user) %></td>
             <td><%= user.current_employer %></td>
             <td><%= user.city %></td>
             <td><%= user.state %></td>
-            <td><%= link_to "Update #{user.name}'s Account", user_path(user) %></td>
         </tr>
         <% end %>
     </tbody>
