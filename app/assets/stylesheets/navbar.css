@@ -1,20 +1,20 @@
- .navbar.navbar-default {
-   padding-top: 10px;
-   margin-bottom: 0px !important;
-   background-color: #a7aab0;
- }
+.navbar.navbar-default {
+  padding-top: 10px;
+  margin-bottom: 0px !important;
+  background-color: #a7aab0;
+}
 
 .user-shadow {
   padding-top: 13px;
   font-size: 1.2em;
 }
 .remove {
-  padding-top: 16px;
+  padding-top: 17px;
   font-size: 1.2em;
 }
 
 .newsfeed-list {
-  padding-top: 16px;
+  padding-top: 15px;
 }
 
 .map-marker {
@@ -33,25 +33,22 @@
   font-size: 1.6em;
 }
 
-.login-with-github {
- }
+.login-link {
+  color: #474747;
+}
 
-  .login-link {
-   color: #474747;
-  }
+.nav > .greeting {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  margin-top: 17px;
+}
 
-  .nav > .greeting {
-    position: absolute;
-    top: 0px;
-    right: 30px;
-    margin-top: 17px;
-  }
+.edit-links-bottom {
+  text-align: center;
+  text-size: 200%;
+}
 
-  .edit-links-bottom {
-    text-align: center;
-    text-size: 200%;
-  }
-
-  .hidden {
-    display: none;
-  }
+.hidden {
+  display: none;
+}
