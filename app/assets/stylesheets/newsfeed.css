@@ -15,20 +15,23 @@
   font-size: 200%;
   text-align: center;
   padding: 15px;
-  font-family: Raleway;
+  font-family: monospace;
   background-color: #42345d;
 }
 .updates{
+  padding-top: 20px;
   padding-left: 290px;
   font-family: 'Raleway', Arial, sans-serif;
 }
 
 .updates-page {
   background: url("https://images.unsplash.com/uploads/1412273646059cc129bb5/eae0a1da?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a518df16021d3615689f5cff5ee0a879") no-repeat center;
+  min-height: 100vh;
 }
 .each-update {
   width: 70%;
   height: 50px;
+  padding-top: 12px;
   font-weight: bolder;
   padding-left: 15px;
   margin: 1px 1px 1px 1px;
@@ -38,5 +41,7 @@
 }
 
 .updates-paginate {
-  height: 20px;
+  height: 30px;
+  padding-left: 20px;
+  padding-bottom: 15px;
 }
