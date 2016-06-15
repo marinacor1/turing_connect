@@ -1,8 +1,9 @@
 .index-title {
-  font-size: 3em;
-  text-align: center;
+  font-size: 1.3em;
   background-color: #1eccbe;
   padding-bottom: 30px;
+  padding-left: 17px;
+  padding-top: 12px;
 }
 
 .users-index-page {
