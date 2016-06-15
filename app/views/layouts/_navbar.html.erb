@@ -33,10 +33,10 @@
         <li class = "newsfeed-link">
           <%= link_to "Newsfeed", newsfeed_path %>
         </li>
+        <% if current_user.admin? %>
         <li class="cog">
           <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
         </li>
-        <% if current_user.admin? %>
         <li class= "edit-link">
           <a href="/admin/users/">Edit Accounts</a>
         </li>

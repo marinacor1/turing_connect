@@ -28,11 +28,12 @@ class Seed
   end
 
   def add_1602
-    User.create(github_id: '11367377', city: "Denver", state: "C)") #sunny
+    User.create(name: "Gurusundesh Khalsa", github_id: '11367377', cohort: "1602", city: "Denver", state: "C)") #sunny
   end
 
   def add_1511
-   User.create(github_id: '13855453', city: "Denver", state: "CO") #nick
+   User.create(name: "Nicholas Dorans", cohort: "1511", github_id: '13855453', city: "Denver", state: "CO") #nick
+   User.create(name: "July Tran", cohort: "1511", github_id: "14022835", city: "Golden", state: "CO")
   end
 end
 
