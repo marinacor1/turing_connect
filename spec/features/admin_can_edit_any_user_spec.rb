@@ -4,7 +4,7 @@ RSpec.feature "admin can edit anyone" do
   include FeatureHelper
   it "shows an updated user", js:true do
     user = User.create(cohort: "1508", name: "Sabrina Smith", city: "Miami", state: "FL")
-    admin = User.create(name: "Michael Dao", cohort: "1410", city: "Denver", state: "CO", github_id: ENV["mike_uid"], role: 1)
+    admin = User.create(name: "Michael Dao", cohort: "1410", city: "Columbus", state: "OH", github_id: ENV["mike_uid"], role: 1)
     user2 = User.find_by(name: "Marina Corona")
 
     admin_omniauth
@@ -30,7 +30,6 @@ RSpec.feature "admin can edit anyone" do
 
     expect(page).to have_content "DenverNew York City"
     expect(page).to_not have_content "Miami"
-    expect(page).to_not have_content "Denver"
 
   end
 end
