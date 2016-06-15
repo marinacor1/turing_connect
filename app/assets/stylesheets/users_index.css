@@ -1,6 +1,7 @@
 .index-title {
-  size: 400px;
+  font-size: 3em;
   text-align: center;
+  background-color: #1eccbe;
   padding-bottom: 30px;
 }
 
