@@ -6,6 +6,14 @@
   padding-top: 12px;
 }
 
+.search-bar {
+  background-color: #1eccbe;
+  position: relative:
+  float: right:
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
 .users-index-page {
   padding-left: 60px;
   background-color: #1eccbe;
