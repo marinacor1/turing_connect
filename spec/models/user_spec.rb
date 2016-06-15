@@ -31,7 +31,7 @@ RSpec.describe User, type: :model do
 
   describe "creates a new update using user information" do
     fixtures :users
-    xit "has a new update" do
+    it "has a new update" do
       params = {"user"=>{"city"=>"New York City"}, "format"=>:json, "controller"=>"api/v1/users", "action"=>"update", "id"=>"1"}
       original_count = Update.all.count
 
