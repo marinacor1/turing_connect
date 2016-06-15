@@ -9,12 +9,9 @@ RSpec.feature "user can view all users list" do
 
     click_on 'Alumni'
 
-    expect(current_path).to eq '/search/'
+    expect(current_path).to eq '/students'
 
-    visit '/g_newsfeed'
 
-    expect(current_path).to eq g_newsfeed_path
-
-    expect(page).to have_content "Welcome to your Github Newsfeed"
+    expect(page).to have_content "All Alumni"
   end
 end
