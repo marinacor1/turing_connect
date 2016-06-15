@@ -1,13 +1,13 @@
 .index-title {
   font-size: 1.3em;
-  background-color: #1eccbe;
+  background-color: #79c9c3;
   padding-bottom: 30px;
   padding-left: 17px;
   padding-top: 12px;
 }
 
 .search-bar {
-  background-color: #1eccbe;
+  background-color: #79c9c3;
   position: relative:
   float: right:
   padding: 10px;
@@ -16,7 +16,7 @@
 
 .users-index-page {
   padding-left: 60px;
-  background-color: #1eccbe;
+  background-color: #79c9c3;
   font-family: 'Raleway', Arial, sans-serif;
   padding-bottom: 30px;
 }
