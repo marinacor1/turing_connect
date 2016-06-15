@@ -40,8 +40,17 @@ RSpec.describe User, type: :model do
       expect(new_update.cohort).to eq("1602")
       expect(new_update.action).to eq("updated their city.")
       expect(Update.all.count).to eq(1)
+      end
+    end
 
+  describe "filter actions properly identifies changes" do
+    fixtures :users
+    it "tests for the correct change" do
+      params = {"state"=>"VA"}
 
+      action = User.filter_action(params)
+
+      expect(action).to eq("updated their state.")
     end
   end
 
