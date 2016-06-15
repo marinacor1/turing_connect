@@ -16,7 +16,7 @@ module FeatureHelper
         raw_info: {
                     id: ENV["github_uid"],
                     name: "Marina Corona",
-                    avatar_url: "ljsfls",
+                    avatar_url: "https://www.hamptoncreek.com/img/p-just-cookies/panel-cookie-choc-cookie.png",
                     },
 
       },
@@ -38,7 +38,7 @@ module FeatureHelper
         raw_info: {
                     id: "034090",
                     name: "Marina Corona",
-                    avatar_url: "ljsfls",
+                    avatar_url: "http://cdn.phillymag.com/wp-content/uploads/2014/09/CheeseAssortment1.jpg",
                     },
 
       },
@@ -59,7 +59,7 @@ module FeatureHelper
         raw_info: {
                     id: ENV['mike_uid'],
                     name: "Michael Dao",
-                    avatar_url: "ljsfls",
+                    avatar_url: "http://cdn.phillymag.com/wp-content/uploads/2014/09/CheeseAssortment1.jpg",
                     },
 
       },
@@ -67,7 +67,7 @@ module FeatureHelper
         token: ENV["github_token"]
       },
           info: {
-            image: "lsjfls"
+            image: "http://cdn.phillymag.com/wp-content/uploads/2014/09/CheeseAssortment1.jpg"
           }
       })
   end
