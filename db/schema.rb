@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160615232437) do
+ActiveRecord::Schema.define(version: 20160616193848) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,11 +41,11 @@ ActiveRecord::Schema.define(version: 20160615232437) do
     t.string   "street_address",   default: "none"
     t.string   "city"
     t.string   "state"
-    t.string   "image"
+    t.string   "image",            default: "https://avatars1.githubusercontent.com/u/7934292?v=3&s=200"
     t.string   "oauth_token"
     t.string   "email",            default: "none"
-    t.datetime "created_at",                        null: false
-    t.datetime "updated_at",                        null: false
+    t.datetime "created_at",                                                                              null: false
+    t.datetime "updated_at",                                                                              null: false
     t.integer  "role",             default: 0
     t.boolean  "first_login",      default: true
     t.float    "latitude"

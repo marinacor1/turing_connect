@@ -46,7 +46,7 @@ cohort,name,current_employer,github_id,street_address,city,state
 1410,Krista Nelson,GlassBreakers,8313881,2085 Sacramento St,San Francisco,CA
 1410,Laura Whalin,Wombat Security Technologies,8449527,3030 Penn Ave,Pittsburgh,PA
 1410,Lydia Shafer ,Wombat Security Technologies,8863407,3030 Penn Ave,Pittsburgh,PA
-1410,Michael Dao,Turing School of Software and Design,3011748,1510 Blake St.,Denver ,CO
+1410,Michael Dao,Turing School,3011748,1510 Blake St.,Denver ,CO
 1410,Nathan Owsiany,GoSpotCheck,3827810,1520 Market St,Denver ,CO
 1410,Orion Osborn,Invoca,869456,1025 Chapala St,Santa Barbara,CA
 1410,Scott Crawford,Bonobos,8398867,45 W. 25th St,New York,NY
@@ -120,7 +120,7 @@ cohort,name,current_employer,github_id,street_address,city,state
 1508,Amber Crawford,StitchFix,11097011,731 Market St,San Francisco,CA
 1508,Emily Dowdle,Wazee Digital,12585856,1515 Arapahoe St. #400,Denver,CO
 1508,Jason Pilz,Harry Fox Agency,11759003,40 Wall St. #6,New York,NY
-1508,Jhun de Andres,Turing School of Software and Design,8650958,1510 Blake St,Denver,CO
+1508,Jhun de Andres,Turing School,8650958,1510 Blake St,Denver,CO
 1508,Jill Donohue,Notion,11321261,,Denver,CO
 1508,Matt Rooney,Harry Fox Agency,11494414,40 Wall St. #6,New York,NY
 1508,Matt Stjernholm,Granicus,5952473,707 17th St,Denver,CO
@@ -133,9 +133,9 @@ cohort,name,current_employer,github_id,street_address,city,state
 1508,Torie Warren,CareZone,8861750,1520 Bellevue Ave,Seattle,WA
 1508,Tyler Komoroske,AllState,11931899,222 S Mill Ave Fl 6,Tempe,AZ
 1510,Aaron Greenspan,Rachio,13969784,,Denver,CO
-1510,Beth Sebian,Turing School of Software and Design,12875824,1510 Blake St.,Denver,CO
+1510,Beth Sebian,Turing School,12875824,1510 Blake St.,Denver,CO
 1510,Brant Wellman,,6422641,,Denver,CO
-1510,Brenna Martenson,Turing School of Software and Design,13123158,1510 Blake St,Denver,CO
+1510,Brenna Martenson,Turing School,13123158,1510 Blake St,Denver,CO
 1510,Dan Winter,Computer Associates,13614117,700 E. 1st St. ,Casper,WY
 1510,David Stinette,AllState,10576647,222 S Mill Ave Fl 6,Tempe,AZ
 1510,Edgar Duran,,11325650,,Denver,CO
