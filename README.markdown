@@ -13,13 +13,13 @@
 
 This application uses the following tools:
 
-#### Languages/ Frameworks: RAILS 4.0, Ruby, Javascript, AJAX, JQuery, Bootstrap, HTML, and CSS.
+*Languages/ Frameworks:* RAILS 4.0, Ruby, Javascript, AJAX, JQuery, Bootstrap, HTML, and CSS.
 
-#### Gems: Gmaps4rails, Geocode, OmniAuth
+*Gems:* Gmaps4rails, Geocode, OmniAuth
 
-#### APIS/ Services: Googlemaps Javascript, Github, Google Fonts, Amazon Web Services
+*APIS/ Services:* Googlemaps Javascript, Github, Google Fonts, Amazon Web Services
 
-#### Testing: RSpec, Simplecov (for coverage)
+*Testing:* RSpec, Simplecov (for coverage)
 
 ![](https://s3-us-west-2.amazonaws.com/turingconnect/Screen+Shot+2016-06-15+at+10.37.15+PM.png)
 
