@@ -4,7 +4,7 @@
 
 ![](https://s3-us-west-2.amazonaws.com/turingconnect/Screen+Shot+2016-06-15+at+10.50.27+PM.png)
 
-![](https://s3-us-west-2.amazonaws.com/turingconnect/Screen+Shot+2016-06-15+at+10.51.09+PM.png)
+![](https://s3-us-west-2.amazonaws.com/turingconnect/Screen+Shot+2016-06-15+at+10.58.17+PM.png)
 
 [LIVE ON HEROKU] (https://turingconnect.herokuapp.com/)
 
