@@ -18,6 +18,7 @@ gem "geocoder"
 gem 'rails_12factor', group: :production
 gem 'unicorn'
 gem 'gmaps4rails'
+gem 'will_paginate-bootstrap'
 
 group :test do
   gem 'database_cleaner'
