@@ -25,7 +25,7 @@
 }
 
 .updates-page {
-  background: url(dark_embroidery.png);
+  background: url("https://s3-us-west-2.amazonaws.com/turingconnect/dark_embroidery.png?X-Amz-Date=20160616T022347Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=f5b25bd8087ee4c7e29c911ec897bad0a51f079424e0d6c9b0442195e7ff2652&X-Amz-Credential=ASIAJKLCWKLMPPFFQCKA/20160616/us-west-2/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEJv//////////wEaDMxJvA831qb5cVVzbSLHAdmDRHDDwn/k385oIExsshpq2YzfuKoV20%2BstOEeyBwkYYBE4tvrQHPfCzgQQMVwVNrZ0r1eFwl7IikE/JXYOESC99528wxypln/8M2%2BvLDSQ38am0qGegCZumZvPfmL8HS7y3M9Or76oFZydVY/9OD04UCfbvSsFfkjKsVRZVdv2fBpbo5VE5v9QryVCHYuTGDGgZfWcazKwVKM7%2BplGePdb/oqIO2B9Oj%2BTZlyTgki3XzFdVYKiRZphdVVT2yipPDNN/lVuFYo2IyIuwU%3D");
   min-height: 100vh;
 }
 .each-update {
