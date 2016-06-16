@@ -16,7 +16,9 @@ This application uses RAILS 4.0, Gmaps4rails Gem, Geocode Gem, OmniAuth Gem, Goo
 
 ###On Your Own
 To download the project and set it up locally, run the following commands:
-```$ git clone https://github.com/marinacor1/turing_connect.git
+
+```
+$ git clone https://github.com/marinacor1/turing_connect.git
 ```
 ```
 $ bundle
