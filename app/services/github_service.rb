@@ -10,10 +10,6 @@ class GithubService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def get_user
-    @connection.get "/users/#{@user["screen_name"]}"
-  end
-
   def get_following_feed
     @connection.get "users/#{@user["screen_name"]}/received_events"
   end
