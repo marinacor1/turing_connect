@@ -22,7 +22,7 @@ class Seed
   end
 
   def add_1602
-    User.create(name: "Gurusundesh Khalsa", github_id: '11367377', cohort: "1602", city: "Denver", state: "C)") #sunny
+    User.create(name: "Gurusundesh Khalsa", github_id: '11367377', cohort: "1602", city: "Denver", state: "CO") #sunny
   end
 
   def add_1511
