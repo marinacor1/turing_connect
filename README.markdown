@@ -1,6 +1,10 @@
 ####Turing Connect
 
-*Turing Connect* connects the Turing community by tracking all alumni jobs on a Google Maps interface and allowing alumni to post and update information through updates and a newsfeed.
+*Turing Connect* connects the Turing community by tracking all alumni jobs on a Google Maps interface and allowing alumni to post and update information through an interactive dashboard and a social newsfeed.
+
+![]https://s3-us-west-2.amazonaws.com/turingconnect/Screen+Shot+2016-06-15+at+10.50.27+PM.png
+
+1[]https://s3-us-west-2.amazonaws.com/turingconnect/Screen+Shot+2016-06-15+at+10.51.09+PM.png
 
 [LIVE ON HEROKU] (https://turingconnect.herokuapp.com/)
 
