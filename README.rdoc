@@ -1,14 +1,35 @@
-Turing - Connect
+####Turing Connect
 
-This app will connect current Turing students and staff to alumni.  Additionally, it will provide information about alumni locations and companies.
+*Turing Connect* connects the Turing community by tracking all alumni jobs on a Google Maps interface and allowing alumni to post and update information through updates and a newsfeed.
 
-OAuth will be through Github and provide different information depending on registration.
+[LIVE ON HEROKU] (https://turingconnect.herokuapp.com/)
 
-In order to use this app:
-1. Clone repo.
-2. Bundle
-3. Replace my github/ google maps javascript keys  with your own
-4. rake db:create db:migrate
-5. bundle exec rake import
-6. rake db:seed
-7. rake geocode:all CLASS=User SLEEP=0.25 BATCH=100
+## Details about the Application
+
+This application uses RAILS 4.0, Gmaps4rails Gem, Geocode Gem, OmniAuth Gem, Googlemap API, Googlefonts, Github API, Bootstrap, Amazon Web Services, HTML, and CSS.
+
+![](https://s3-us-west-2.amazonaws.com/turingconnect/Screen+Shot+2016-06-15+at+10.37.15+PM.png)
+
+###On Your Own
+To download the project and set it up locally, run the following commands:
+```$ git clone https://github.com/marinacor1/turing_connect.git
+```
+```
+$ bundle
+```
+```
+$ bundle exec figaro install
+```
+Make sure to switch out my keys for your own. You will need keys for Google Maps and Github
+```
+$ rake db:create db:migrate
+```
+```
+$ bundle exec rake import
+ ```
+ ```
+$ rake db:seed
+```
+```
+$ rake geocode:all CLASS=User SLEEP=0.25 BATCH=100
+```
