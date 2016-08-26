@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user
   def index
     users = User.all
     @users = users.where.not(name: 'none')
@@ -13,11 +12,13 @@ class UsersController < ApplicationController
   end
 
   def show
+    logged_in_user
     @user = User.find(params[:id])
     @id = current_user.id
   end
 
   def edit
+    logged_in_user
     @user = User.find(params[:id])
   end
 
