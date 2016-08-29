@@ -1,0 +1,10 @@
+aside {
+  padding: 10px;
+  font-size: 1.4em;
+  font-family: monospace;
+}
+
+.link {
+  color: blue;
+  text-shadow: .5px .5px blue;
+}

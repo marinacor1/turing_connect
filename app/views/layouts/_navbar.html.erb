@@ -15,10 +15,10 @@
             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
           </li>
         <li>
-           <% if current_user.admin? %>
-          <%= link_to "Dashboard", admin_dashboard_path %>
+          <% if current_user.admin? %>
+            <%= link_to "Dashboard", admin_dashboard_path %>
           <% else %>
-          <%= link_to "Dashboard", user_path(current_user) %>
+            <%= link_to "Dashboard", user_path(current_user) %>
           <% end %>
         </li>
         <li class="map-marker">
@@ -62,11 +62,18 @@
           <% end %>
         </li>
       <% else %>
+      <!-- if not logged in -->
         <li class="login-with-github">
           <%= link_to "Sign in with Github", github_login_path %>
         </li>
         <li class="login-icon">
           <span class="fa fa-github fa-6" aria-hidden="true"></span>
+        </li>
+        <li class="map-link">
+          <%= link_to "Turing Alumni Map", users_map_path %>
+        </li>
+        <li class="map-marker">
+          <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
         </li>
       <% end %>
     </ul>
