@@ -64,7 +64,7 @@
       <% else %>
       <!-- if not logged in -->
         <li class="login-with-github">
-          <%= link_to "Sign in with Github", github_login_path %>
+          <%= link_to "Sign in with Github", "https://github.com/login/oauth/authorize?client_id=#{github_client_id}" %>
         </li>
         <li class="login-icon">
           <span class="fa fa-github fa-6" aria-hidden="true"></span>

@@ -13,7 +13,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'capybara'
 gem 'responders', '~>2.0'
-gem 'omniauth-github'
+gem 'omniauth', '~> 1.6', '>= 1.6.1'
+gem 'omniauth-github', '~> 1.1', '>= 1.1.2'
 gem "geocoder"
 gem 'rails_12factor', group: :production
 gem 'unicorn'
